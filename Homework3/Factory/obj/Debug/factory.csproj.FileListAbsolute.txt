@@ -1,0 +1,11 @@
+G:\VS\repos\Homework3\work2\bin\Debug\work2.exe.config
+G:\VS\repos\Homework3\work2\bin\Debug\work2.exe
+G:\VS\repos\Homework3\work2\bin\Debug\work2.pdb
+G:\VS\repos\Homework3\work2\bin\Debug\Homework3.exe
+G:\VS\repos\Homework3\work2\bin\Debug\Homework3.pdb
+G:\VS\repos\Homework3\work2\bin\Debug\Homework3.exe.config
+G:\VS\repos\Homework3\work2\obj\Debug\factory.csprojAssemblyReference.cache
+G:\VS\repos\Homework3\work2\obj\Debug\factory.csproj.CoreCompileInputs.cache
+G:\VS\repos\Homework3\work2\obj\Debug\factory.csproj.CopyComplete
+G:\VS\repos\Homework3\work2\obj\Debug\work2.exe
+G:\VS\repos\Homework3\work2\obj\Debug\work2.pdb

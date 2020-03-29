@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<ArrayOfOrder xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Order>
+    <orderItems>
+      <OrderItem>
+        <OrderItemID>0</OrderItemID>
+        <ProductNum>1</ProductNum>
+        <ProductID>0</ProductID>
+        <ProductPrice>2349</ProductPrice>
+        <ProductName>Huawei P30</ProductName>
+      </OrderItem>
+      <OrderItem>
+        <OrderItemID>0</OrderItemID>
+        <ProductNum>1</ProductNum>
+        <ProductID>0</ProductID>
+        <ProductPrice>1200</ProductPrice>
+        <ProductName>iPad pro</ProductName>
+      </OrderItem>
+    </orderItems>
+    <OrderID>28</OrderID>
+    <OrderDate>0001-01-01T00:00:00</OrderDate>
+    <CustomerID>57</CustomerID>
+    <OrderAmount>0</OrderAmount>
+  </Order>
+</ArrayOfOrder>

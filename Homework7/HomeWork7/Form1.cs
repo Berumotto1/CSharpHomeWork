@@ -69,6 +69,7 @@ namespace HomeWork7
         double th2 = 20 * Math.PI / 180;
         double per1 = 0.6;
         double per2 = 0.7;
+        Pen color = Pens.Blue;
 
         void drawCayleyTree(int n, double x0, double y0, double leng, double th)
         {
@@ -108,9 +109,9 @@ namespace HomeWork7
 
         void drawLine(double x0, double y0, double x1, double y1)
         {
-            Pen color=Pens.Blue;
+            
 
-            if (textBox7.Text != "")
+            /*if (textBox7.Text != "")
             {
                //string str=textBox7.Text.First().ToString().ToUpper() 
                 //    + textBox7.Text.Substring(1);
@@ -138,7 +139,7 @@ namespace HomeWork7
                         color = Pens.Violet;
                         break;
                 }     
-            }
+            }*/
             //n层
             //进度条
             progressBar1.Value += 1;
@@ -146,6 +147,20 @@ namespace HomeWork7
             graphics.DrawLine(color, (int)x0, (int)y0, (int)x1, (int)y1);
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+            ColorDialog colorDia = new ColorDialog();
+
+            if (colorDia.ShowDialog() == DialogResult.OK)
+            {
+                //获取所选择的颜色
+                Color colorChoosed = colorDia.Color; 
+                color = new Pen(colorChoosed);
+                button2.BackColor = colorChoosed;
+            }
+
+        }
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -220,5 +235,7 @@ namespace HomeWork7
         {
 
         }
+
+        
     }
 }

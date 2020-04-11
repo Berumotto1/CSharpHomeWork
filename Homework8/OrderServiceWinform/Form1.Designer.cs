@@ -37,33 +37,35 @@
             this.ImportOrder = new System.Windows.Forms.ToolStripMenuItem();
             this.OutputOrder = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.CustomerID = new System.Windows.Forms.TextBox();
-            this.CustomerID_label = new System.Windows.Forms.Label();
-            this.OrderID = new System.Windows.Forms.TextBox();
-            this.OrderID_label = new System.Windows.Forms.Label();
-            this.QuaryButton = new System.Windows.Forms.Button();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.orderIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.orderDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.customerIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.orderAmountDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.orderBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.ItembindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.orderItemIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productNumDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productPriceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ItembindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.orderBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.orderIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.orderDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.customerIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.orderAmountDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.QueryBox = new System.Windows.Forms.TextBox();
+            this.QuaryButton = new System.Windows.Forms.Button();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.ItemBox = new System.Windows.Forms.ComboBox();
+            this.DeleteButton = new System.Windows.Forms.Button();
+            this.ClearButton = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.flowLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.orderBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItembindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.orderBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -121,6 +123,7 @@
             this.OutputOrder.Name = "OutputOrder";
             this.OutputOrder.Size = new System.Drawing.Size(81, 26);
             this.OutputOrder.Text = "导出订单";
+            this.OutputOrder.Click += new System.EventHandler(this.OutputOrder_Click);
             // 
             // panel1
             // 
@@ -137,121 +140,6 @@
             this.panel1.TabIndex = 1;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.orderIDDataGridViewTextBoxColumn,
-            this.orderDateDataGridViewTextBoxColumn,
-            this.customerIDDataGridViewTextBoxColumn,
-            this.orderAmountDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.orderBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(13, 55);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 27;
-            this.dataGridView1.Size = new System.Drawing.Size(445, 291);
-            this.dataGridView1.TabIndex = 0;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
-            // 
-            // CustomerID
-            // 
-            this.CustomerID.Location = new System.Drawing.Point(307, 10);
-            this.CustomerID.Margin = new System.Windows.Forms.Padding(3, 10, 50, 3);
-            this.CustomerID.Name = "CustomerID";
-            this.CustomerID.Size = new System.Drawing.Size(100, 25);
-            this.CustomerID.TabIndex = 4;
-            // 
-            // CustomerID_label
-            // 
-            this.CustomerID_label.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.CustomerID_label.AutoSize = true;
-            this.CustomerID_label.Location = new System.Drawing.Point(240, 15);
-            this.CustomerID_label.Margin = new System.Windows.Forms.Padding(3, 15, 3, 0);
-            this.CustomerID_label.Name = "CustomerID_label";
-            this.CustomerID_label.Size = new System.Drawing.Size(61, 15);
-            this.CustomerID_label.TabIndex = 3;
-            this.CustomerID_label.Text = "客户ID:";
-            // 
-            // OrderID
-            // 
-            this.OrderID.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.OrderID.Location = new System.Drawing.Point(87, 10);
-            this.OrderID.Margin = new System.Windows.Forms.Padding(3, 10, 50, 3);
-            this.OrderID.Name = "OrderID";
-            this.OrderID.Size = new System.Drawing.Size(100, 25);
-            this.OrderID.TabIndex = 2;
-            // 
-            // OrderID_label
-            // 
-            this.OrderID_label.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.OrderID_label.AutoSize = true;
-            this.OrderID_label.Location = new System.Drawing.Point(20, 16);
-            this.OrderID_label.Margin = new System.Windows.Forms.Padding(20, 0, 3, 0);
-            this.OrderID_label.Name = "OrderID_label";
-            this.OrderID_label.Size = new System.Drawing.Size(61, 15);
-            this.OrderID_label.TabIndex = 1;
-            this.OrderID_label.Text = "订单ID:";
-            this.OrderID_label.Click += new System.EventHandler(this.OrderID_label_Click);
-            // 
-            // QuaryButton
-            // 
-            this.QuaryButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.QuaryButton.Location = new System.Drawing.Point(467, 3);
-            this.QuaryButton.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
-            this.QuaryButton.Name = "QuaryButton";
-            this.QuaryButton.Size = new System.Drawing.Size(103, 41);
-            this.QuaryButton.TabIndex = 0;
-            this.QuaryButton.Text = "查询";
-            this.QuaryButton.UseVisualStyleBackColor = true;
-            this.QuaryButton.Click += new System.EventHandler(this.QuaryButton_Click);
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Controls.Add(this.OrderID_label);
-            this.flowLayoutPanel1.Controls.Add(this.OrderID);
-            this.flowLayoutPanel1.Controls.Add(this.CustomerID_label);
-            this.flowLayoutPanel1.Controls.Add(this.CustomerID);
-            this.flowLayoutPanel1.Controls.Add(this.QuaryButton);
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 30);
-            this.flowLayoutPanel1.MaximumSize = new System.Drawing.Size(0, 50);
-            this.flowLayoutPanel1.MinimumSize = new System.Drawing.Size(0, 50);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1103, 50);
-            this.flowLayoutPanel1.TabIndex = 2;
-            this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
-            // 
-            // orderIDDataGridViewTextBoxColumn
-            // 
-            this.orderIDDataGridViewTextBoxColumn.DataPropertyName = "OrderID";
-            this.orderIDDataGridViewTextBoxColumn.HeaderText = "OrderID";
-            this.orderIDDataGridViewTextBoxColumn.Name = "orderIDDataGridViewTextBoxColumn";
-            // 
-            // orderDateDataGridViewTextBoxColumn
-            // 
-            this.orderDateDataGridViewTextBoxColumn.DataPropertyName = "OrderDate";
-            this.orderDateDataGridViewTextBoxColumn.HeaderText = "OrderDate";
-            this.orderDateDataGridViewTextBoxColumn.Name = "orderDateDataGridViewTextBoxColumn";
-            // 
-            // customerIDDataGridViewTextBoxColumn
-            // 
-            this.customerIDDataGridViewTextBoxColumn.DataPropertyName = "CustomerID";
-            this.customerIDDataGridViewTextBoxColumn.HeaderText = "CustomerID";
-            this.customerIDDataGridViewTextBoxColumn.Name = "customerIDDataGridViewTextBoxColumn";
-            // 
-            // orderAmountDataGridViewTextBoxColumn
-            // 
-            this.orderAmountDataGridViewTextBoxColumn.DataPropertyName = "OrderAmount";
-            this.orderAmountDataGridViewTextBoxColumn.HeaderText = "OrderAmount";
-            this.orderAmountDataGridViewTextBoxColumn.Name = "orderAmountDataGridViewTextBoxColumn";
-            // 
-            // orderBindingSource
-            // 
-            this.orderBindingSource.DataSource = typeof(Homework5.Order);
-            // 
             // dataGridView2
             // 
             this.dataGridView2.AutoGenerateColumns = false;
@@ -266,14 +154,9 @@
             this.dataGridView2.Location = new System.Drawing.Point(476, 55);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowTemplate.Height = 27;
-            this.dataGridView2.Size = new System.Drawing.Size(565, 283);
+            this.dataGridView2.Size = new System.Drawing.Size(565, 291);
             this.dataGridView2.TabIndex = 1;
             this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
-            // 
-            // ItembindingSource1
-            // 
-            this.ItembindingSource1.DataMember = "orderItems";
-            this.ItembindingSource1.DataSource = this.orderBindingSource;
             // 
             // orderItemIDDataGridViewTextBoxColumn
             // 
@@ -305,6 +188,135 @@
             this.productNameDataGridViewTextBoxColumn.HeaderText = "ProductName";
             this.productNameDataGridViewTextBoxColumn.Name = "productNameDataGridViewTextBoxColumn";
             // 
+            // ItembindingSource1
+            // 
+            this.ItembindingSource1.DataMember = "orderItems";
+            this.ItembindingSource1.DataSource = this.orderBindingSource;
+            // 
+            // orderBindingSource
+            // 
+            this.orderBindingSource.DataSource = typeof(Homework5.Order);
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.orderIDDataGridViewTextBoxColumn,
+            this.orderDateDataGridViewTextBoxColumn,
+            this.customerIDDataGridViewTextBoxColumn,
+            this.orderAmountDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.orderBindingSource;
+            this.dataGridView1.Location = new System.Drawing.Point(13, 55);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowTemplate.Height = 27;
+            this.dataGridView1.Size = new System.Drawing.Size(457, 291);
+            this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
+            // 
+            // orderIDDataGridViewTextBoxColumn
+            // 
+            this.orderIDDataGridViewTextBoxColumn.DataPropertyName = "OrderID";
+            this.orderIDDataGridViewTextBoxColumn.HeaderText = "OrderID";
+            this.orderIDDataGridViewTextBoxColumn.Name = "orderIDDataGridViewTextBoxColumn";
+            // 
+            // orderDateDataGridViewTextBoxColumn
+            // 
+            this.orderDateDataGridViewTextBoxColumn.DataPropertyName = "OrderDate";
+            this.orderDateDataGridViewTextBoxColumn.HeaderText = "OrderDate";
+            this.orderDateDataGridViewTextBoxColumn.Name = "orderDateDataGridViewTextBoxColumn";
+            // 
+            // customerIDDataGridViewTextBoxColumn
+            // 
+            this.customerIDDataGridViewTextBoxColumn.DataPropertyName = "CustomerID";
+            this.customerIDDataGridViewTextBoxColumn.HeaderText = "CustomerID";
+            this.customerIDDataGridViewTextBoxColumn.Name = "customerIDDataGridViewTextBoxColumn";
+            // 
+            // orderAmountDataGridViewTextBoxColumn
+            // 
+            this.orderAmountDataGridViewTextBoxColumn.DataPropertyName = "OrderAmount";
+            this.orderAmountDataGridViewTextBoxColumn.HeaderText = "OrderAmount";
+            this.orderAmountDataGridViewTextBoxColumn.Name = "orderAmountDataGridViewTextBoxColumn";
+            // 
+            // QueryBox
+            // 
+            this.QueryBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.QueryBox.Location = new System.Drawing.Point(159, 10);
+            this.QueryBox.Margin = new System.Windows.Forms.Padding(3, 10, 50, 3);
+            this.QueryBox.Name = "QueryBox";
+            this.QueryBox.Size = new System.Drawing.Size(100, 25);
+            this.QueryBox.TabIndex = 2;
+            // 
+            // QuaryButton
+            // 
+            this.QuaryButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.QuaryButton.Location = new System.Drawing.Point(319, 3);
+            this.QuaryButton.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
+            this.QuaryButton.Name = "QuaryButton";
+            this.QuaryButton.Size = new System.Drawing.Size(103, 41);
+            this.QuaryButton.TabIndex = 0;
+            this.QuaryButton.Text = "查询";
+            this.QuaryButton.UseVisualStyleBackColor = true;
+            this.QuaryButton.Click += new System.EventHandler(this.QuaryButton_Click);
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.ItemBox);
+            this.flowLayoutPanel1.Controls.Add(this.QueryBox);
+            this.flowLayoutPanel1.Controls.Add(this.QuaryButton);
+            this.flowLayoutPanel1.Controls.Add(this.DeleteButton);
+            this.flowLayoutPanel1.Controls.Add(this.ClearButton);
+            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 30);
+            this.flowLayoutPanel1.MaximumSize = new System.Drawing.Size(0, 50);
+            this.flowLayoutPanel1.MinimumSize = new System.Drawing.Size(0, 50);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1103, 50);
+            this.flowLayoutPanel1.TabIndex = 2;
+            this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            this.openFileDialog1.Filter = "xml files (*.xml)|*.xml|Text files (*.txt)|*.txt|All files (*.*)|*.*";
+            // 
+            // saveFileDialog1
+            // 
+            this.saveFileDialog1.Filter = "xml files (*.xml)|*.xml|Text files (*.txt)|*.txt|All files (*.*)|*.*";
+            // 
+            // ItemBox
+            // 
+            this.ItemBox.FormattingEnabled = true;
+            this.ItemBox.Items.AddRange(new object[] {
+            "订单ID",
+            "客户ID"});
+            this.ItemBox.Location = new System.Drawing.Point(25, 11);
+            this.ItemBox.Margin = new System.Windows.Forms.Padding(25, 11, 10, 3);
+            this.ItemBox.Name = "ItemBox";
+            this.ItemBox.Size = new System.Drawing.Size(121, 23);
+            this.ItemBox.TabIndex = 3;
+            // 
+            // DeleteButton
+            // 
+            this.DeleteButton.Location = new System.Drawing.Point(428, 3);
+            this.DeleteButton.Name = "DeleteButton";
+            this.DeleteButton.Size = new System.Drawing.Size(102, 41);
+            this.DeleteButton.TabIndex = 4;
+            this.DeleteButton.Text = "删除";
+            this.DeleteButton.UseVisualStyleBackColor = true;
+            this.DeleteButton.Click += new System.EventHandler(this.DeleteButton_Click);
+            // 
+            // ClearButton
+            // 
+            this.ClearButton.Location = new System.Drawing.Point(536, 3);
+            this.ClearButton.Name = "ClearButton";
+            this.ClearButton.Size = new System.Drawing.Size(101, 41);
+            this.ClearButton.TabIndex = 5;
+            this.ClearButton.Text = "清除";
+            this.ClearButton.UseVisualStyleBackColor = true;
+            this.ClearButton.Click += new System.EventHandler(this.ClearButton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -320,12 +332,12 @@
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItembindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.orderBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.orderBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItembindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -342,10 +354,7 @@
         private System.Windows.Forms.ToolStripMenuItem OutputOrder;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button QuaryButton;
-        private System.Windows.Forms.TextBox CustomerID;
-        private System.Windows.Forms.Label CustomerID_label;
-        private System.Windows.Forms.TextBox OrderID;
-        private System.Windows.Forms.Label OrderID_label;
+        private System.Windows.Forms.TextBox QueryBox;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.BindingSource orderBindingSource;
@@ -361,6 +370,11 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn productPriceDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn productNameDataGridViewTextBoxColumn;
         private System.Windows.Forms.BindingSource ItembindingSource1;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
+        private System.Windows.Forms.ComboBox ItemBox;
+        private System.Windows.Forms.Button DeleteButton;
+        private System.Windows.Forms.Button ClearButton;
     }
 }
 

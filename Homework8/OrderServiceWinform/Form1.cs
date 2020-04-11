@@ -13,8 +13,16 @@ namespace OrderServiceWinform
 {
     public partial class Form1 : Form
     {
+        public string createOrderID { get; set; }
+        public string createCustomerID { get; set; }
+        public string createDate { get; set; }
+        public string createProductName { get; set; }
+        public string createProductNum { get; set; }
+        
+
+
         public List<Order> orderList = new List<Order>();
-        public string orderid { get; set; }
+        public string queryid { get; set; }
         public string customerid { get; set; }
         OrderService os = new OrderService();
         public Form1()
@@ -24,6 +32,7 @@ namespace OrderServiceWinform
             //
             
             //先添加一些订单
+            /*
             String[] names = { "iPad air3", "iPad pro", "Huawei P30", "iPhone", "Computer" };
             Random rnd = new Random(Guid.NewGuid().GetHashCode());
             for (int i = 1; i < 5; i++)
@@ -50,12 +59,17 @@ namespace OrderServiceWinform
                     os.AddOrder(ord);
                 }
             }
+            */
+
             os.CalAmount();
             orderBindingSource.DataSource = os.orderList;
-            //
+            
             //绑定查询条件
-            OrderID.DataBindings.Add("Text", this, "orderid");
-            CustomerID.DataBindings.Add("Text", this, "customerid");
+            QueryBox.DataBindings.Add("Text", this, "queryid");
+            //CustomerID.DataBindings.Add("Text", this, "customerid");
+
+            //创建订单数据绑定
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -70,22 +84,34 @@ namespace OrderServiceWinform
 
         private void CreateOrder_Click(object sender, EventArgs e)
         {
-            new Form2().ShowDialog();
+            Form form2 = new Form2();
+            form2.ShowDialog();
+            
         }
 
         private void QuaryButton_Click(object sender, EventArgs e)
         {
-            if((orderid==null||orderid=="")) //&& (customerid==null||customerid==""))
+            if((ItemBox.Text==null ||ItemBox.Text==""|| queryid == null|| queryid == "")) //&& (customerid==null||customerid==""))
             {
-                orderBindingSource.DataSource = os.orderList;
+                orderBindingSource.DataSource = os.orderList.ToList();
             }
             else
             {
-                
-                orderBindingSource.DataSource = os.orderList.Where(
-                    order => order.OrderID.ToString() == orderid
-                    );
-                //当不存在order满足时，会出现bug!!!!
+                if(ItemBox.Text=="订单ID")
+                {
+                    orderBindingSource.DataSource = os.orderList.Where(
+                    order => order.OrderID.ToString() == queryid
+                    ).ToList();
+                }
+                else
+                {
+                   orderBindingSource.DataSource = os.orderList.Where(
+                   order => order.CustomerID.ToString() == queryid
+                   ).ToList();
+                }
+                 
+                //当不存在order满足时，会出现bug!!!!   
+                //加上toList()  已解决
                 
                 //orderBindingSource.DataSource = os.orderList;
                 
@@ -126,12 +152,41 @@ namespace OrderServiceWinform
 
         private void ImportOrder_Click(object sender, EventArgs e)
         {
-            //orderBindingSource.DataSource=
+            openFileDialog1.InitialDirectory = "G:\\VS\\repos\\Homework5" +
+                "\\Homework5\\bin\\Debug";
+
+            if (openFileDialog1.ShowDialog()==DialogResult.OK)
+            {
+                os.Import(openFileDialog1.FileName);
+                this.orderBindingSource.ResetBindings(false);
+            }
         }
 
         private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void OutputOrder_Click(object sender, EventArgs e)
+        {
+            if(saveFileDialog1.ShowDialog()==DialogResult.OK)
+            {
+                saveFileDialog1.InitialDirectory = "G:\\VS\\repos\\" +
+                    "Homework5\\Homework5\\bin\\Debug";
+                os.Export(saveFileDialog1.FileName);
+            }
+        }
+
+        private void DeleteButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ClearButton_Click(object sender, EventArgs e)
+        {
+            os.orderList = new List<Order>();
+            orderBindingSource.DataSource = os.orderList.ToList();
+            this.orderBindingSource.ResetBindings(false);
         }
     }
 }

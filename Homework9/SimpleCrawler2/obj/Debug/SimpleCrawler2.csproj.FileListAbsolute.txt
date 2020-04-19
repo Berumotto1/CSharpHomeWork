@@ -1,0 +1,7 @@
+G:\VS\repos\SimpleCrawler2\SimpleCrawler2\bin\Debug\SimpleCrawler2.exe.config
+G:\VS\repos\SimpleCrawler2\SimpleCrawler2\bin\Debug\SimpleCrawler2.exe
+G:\VS\repos\SimpleCrawler2\SimpleCrawler2\bin\Debug\SimpleCrawler2.pdb
+G:\VS\repos\SimpleCrawler2\SimpleCrawler2\obj\Debug\SimpleCrawler2.csproj.CoreCompileInputs.cache
+G:\VS\repos\SimpleCrawler2\SimpleCrawler2\obj\Debug\SimpleCrawler2.exe
+G:\VS\repos\SimpleCrawler2\SimpleCrawler2\obj\Debug\SimpleCrawler2.pdb
+G:\VS\repos\SimpleCrawler2\SimpleCrawler2\obj\Debug\SimpleCrawler2.csprojAssemblyReference.cache

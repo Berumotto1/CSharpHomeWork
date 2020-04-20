@@ -28,13 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.Crawler_button = new System.Windows.Forms.Button();
             this.URLBox1 = new System.Windows.Forms.ComboBox();
             this.URLBox2 = new System.Windows.Forms.ComboBox();
             this.URLlistBox1 = new System.Windows.Forms.ListBox();
-            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // Crawler_button
@@ -71,17 +68,12 @@
             // 
             // URLlistBox1
             // 
-            this.URLlistBox1.DataSource = this.bindingSource1;
             this.URLlistBox1.FormattingEnabled = true;
             this.URLlistBox1.ItemHeight = 15;
             this.URLlistBox1.Location = new System.Drawing.Point(93, 116);
             this.URLlistBox1.Name = "URLlistBox1";
             this.URLlistBox1.Size = new System.Drawing.Size(583, 259);
             this.URLlistBox1.TabIndex = 3;
-            // 
-            // bindingSource1
-            // 
-            this.bindingSource1.DataSource = typeof(SimpleCrawler2.SimpleCrawler);
             // 
             // Form1
             // 
@@ -94,7 +86,6 @@
             this.Controls.Add(this.Crawler_button);
             this.Name = "Form1";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -105,7 +96,6 @@
         private System.Windows.Forms.ComboBox URLBox1;
         private System.Windows.Forms.ComboBox URLBox2;
         private System.Windows.Forms.ListBox URLlistBox1;
-        private System.Windows.Forms.BindingSource bindingSource1;
     }
 }
 

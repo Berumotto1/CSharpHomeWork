@@ -15,19 +15,15 @@ namespace WindowsSimpleCrawler_1
     public partial class Form1 : Form
     {
         SimpleCrawler sc = new SimpleCrawler();
-        
-        
+
         public Form1()
         {
             string result = sc.crawlerResult;
             InitializeComponent();
-            
-            //URLlistBox1.DataBindings.Add("Items", this, "result");
-                
+            sc.PageDownload += Crawler_PageDownloaded;     
         }
 
 
-/*
         private void Crawler_PageDownloaded(string obj)
         {
             if (this.URLlistBox1.InvokeRequired)
@@ -46,11 +42,13 @@ namespace WindowsSimpleCrawler_1
         {
             URLlistBox1.Items.Add(url);
         }
-        */
+        
         private void Crawler_button_Click(object sender, EventArgs e)
         {
-            //URLlistBox1.Items.Clear(); //清空内容
+            
             string startURL = URLBox1.Text + URLBox2.Text;
+            URLlistBox1.Items.Clear(); //清空内容
+            //new Thread(() => sc.init(startURL)).Start();
             sc.init(startURL);
             
             

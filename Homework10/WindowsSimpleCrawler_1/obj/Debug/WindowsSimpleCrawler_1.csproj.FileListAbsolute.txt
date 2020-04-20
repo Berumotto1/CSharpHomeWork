@@ -1,0 +1,14 @@
+G:\VS\repos\WindowsSimpleCrawler_1\WindowsSimpleCrawler_1\bin\Debug\WindowsSimpleCrawler_1.exe.config
+G:\VS\repos\WindowsSimpleCrawler_1\WindowsSimpleCrawler_1\bin\Debug\WindowsSimpleCrawler_1.exe
+G:\VS\repos\WindowsSimpleCrawler_1\WindowsSimpleCrawler_1\bin\Debug\WindowsSimpleCrawler_1.pdb
+G:\VS\repos\WindowsSimpleCrawler_1\WindowsSimpleCrawler_1\bin\Debug\SimpleCrawler2.exe
+G:\VS\repos\WindowsSimpleCrawler_1\WindowsSimpleCrawler_1\bin\Debug\SimpleCrawler2.pdb
+G:\VS\repos\WindowsSimpleCrawler_1\WindowsSimpleCrawler_1\bin\Debug\SimpleCrawler2.exe.config
+G:\VS\repos\WindowsSimpleCrawler_1\WindowsSimpleCrawler_1\obj\Debug\WindowsSimpleCrawler_1.csprojAssemblyReference.cache
+G:\VS\repos\WindowsSimpleCrawler_1\WindowsSimpleCrawler_1\obj\Debug\WindowsSimpleCrawler_1.Form1.resources
+G:\VS\repos\WindowsSimpleCrawler_1\WindowsSimpleCrawler_1\obj\Debug\WindowsSimpleCrawler_1.Properties.Resources.resources
+G:\VS\repos\WindowsSimpleCrawler_1\WindowsSimpleCrawler_1\obj\Debug\WindowsSimpleCrawler_1.csproj.GenerateResource.cache
+G:\VS\repos\WindowsSimpleCrawler_1\WindowsSimpleCrawler_1\obj\Debug\WindowsSimpleCrawler_1.csproj.CoreCompileInputs.cache
+G:\VS\repos\WindowsSimpleCrawler_1\WindowsSimpleCrawler_1\obj\Debug\WindowsSimpleCrawler_1.csproj.CopyComplete
+G:\VS\repos\WindowsSimpleCrawler_1\WindowsSimpleCrawler_1\obj\Debug\WindowsSimpleCrawler_1.exe
+G:\VS\repos\WindowsSimpleCrawler_1\WindowsSimpleCrawler_1\obj\Debug\WindowsSimpleCrawler_1.pdb

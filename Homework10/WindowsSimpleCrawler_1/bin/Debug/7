@@ -1,299 +1,200 @@
 ﻿<!DOCTYPE html>
-<html lang="zh-cn">
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="referrer" content="origin" />
-    
-    <meta http-equiv="Cache-Control" content="no-transform" />
-    <meta http-equiv="Cache-Control" content="no-siteapp" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>拓荒者 - 博客园</title>
-    
-    <link rel="stylesheet" href="/css/blog-common.min.css?v=-oFz8B4m7JhHaZzdTkzPza2oLZNDRR8obnCz6w7OHbU" />
-    <link id="MainCss" rel="stylesheet" href="/skins/anothereon001/bundle-anothereon001.min.css?v=vmUk-3Bh8LDsKXwjNHs2GDiFna-ZMTUgOJzjUaXTlPA" />
-    
-    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/anothereon001/bundle-anothereon001-mobile.min.css?v=cJiDsI1JAuHHd-OAUWJeyE5JMXXsG4mmuUi2rVmEK1c" />
-    
-    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/dstang2000/rss" />
-    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/dstang2000/rsd.xml" />
-    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/dstang2000/wlwmanifest.xml" />
-    <script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
-    <script src="/js/blog-common.min.js?v=uk-as-QYRHtjaAbeEigAktvhwf01NRrnle-6exg65Ak"></script>
-    <script>
-        var currentBlogId = 9986;
-        var currentBlogApp = 'dstang2000';
-        var cb_enable_mathjax = false;
-        var isLogined = false;
-        var skinName = 'AnotherEon001';
-    </script>
-    
-    
-    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/jquery/jquery-1.10.2.min_65682a2.js"></script>
+
+    <!--[if lt IE 9]>
+        <script src="./static/html5shiv.js"></script>
+    <![endif]-->
+
+    <link href="./index.css" rel="stylesheet" type="text/css" />
+    <link href="./static/normalize.css" rel="stylesheet" type="text/css" />
+
+    <title>免责声明</title>
+
 </head>
 <body>
-    <a name="top"></a>
-    
-    <div id="wrapper">
-<div id="header">
+    <header>
+        <div class="privacy-mainHeader">
+            <div class="privacy-header-left">
+                <a href="https://www.baidu.com">
+                    <img
+                    src="https://www.baidu.com/img/baidu_jgylogo3.gif"
+                    alt="百度"
+                    class="privacy-img"
+                    >
+                </a>
+            </div>
+            <div class="privacy-header-right">
+                <a href="https://www.baidu.com/">百度首页</a>
+            </div>
+            <div class="privacy-header-right">
+                <a href="http://home.baidu.com/">关于百度</a>
+            </div>
+        </div>
+    </header>
+    <div id="privacy-body">
+        <div id="mainContent">
 
-<div id="top">
-<h1><a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/dstang2000/">拓荒者 dstang2000 <a href="http://www.dstang.com"><font size=-1 color=red>http://www.dstang.com</font></a>
-</h1>
-<div id="subtitle">
-KISS：Keeping things that work，Improve systems procedures styles，Start things of value，Stop things of no value 
-</div>
-</div>
-<div id="sub"><div class="BlogStats">随笔 - 
-4, 文章 - 
-1, 评论 - 
-17, 引用 - 
-0</div>
+            <nav class="privacy-nav-navbar privacy-nav-navbar-gap">
+                <ul class="privacy-nav-menu-primary">
+                    <li class="privacy-nav-menu-item" id="知识产权声明">
+                        <a href="copyright.html">知识产权声明</a>
+                    </li >
+                    <li class="privacy-nav-menu-item" id="免责声明">
+                        <a href="mianze-shengming.html">免责声明</a>
+                    </li >
+                    <li class="privacy-nav-menu-item" id="权利声明">
+                        <a href="right.html">权利声明</a>
+                    </li >
 
-</div>
+                    <li class="privacy-nav-menu-item" id="隐私权保护声明">
+                        <a href="yinsiquan-policy.html">隐私权保护声明</a>
+                        <ul class="privacy-nav-submenu" style="display: none; ">
+                            <li class="privacy-nav-submenu-item privacy-nav-submenu-item-withitems" id="百度隐私政策总则">
+                                <a href="yinsiquan-policy.html">百度隐私政策总则</a>
+                                <ul class="privacy-nav-nestedmenu" style="display: none; ">
+                                    <li class="privacy-nav-nestedmenu-item" id="#引言">
+                                        引言
+                                    </li>
+                                    <li class="privacy-nav-nestedmenu-item" id="#我们如何收集和使用您的个人信息">
+                                        我们如何收集和使用您的个人信息
+                                    </li>
+                                    <li class="privacy-nav-nestedmenu-item" id="#我们如何使用Cookie和同类技术">
+                                        我们如何使用 Cookie 和同类技术
+                                    </li>
+                                    <li class="privacy-nav-nestedmenu-item" id="#我们如何共享、转让、公开披露您的个人信息">
+                                        我们如何共享、转让、公开披露您的个人信息
+                                    </li>
+                                    <li class="privacy-nav-nestedmenu-item" id="#我们如何保存及保护您的个人信息">
+                                        我们如何保存及保护您的个人信息
+                                    </li>
+                                    <li class="privacy-nav-nestedmenu-item" id="#您的权利">
+                                        您的权利
+                                    </li>
+                                    <li class="privacy-nav-nestedmenu-item" id="#我们如何处理未成年人的个人信息">
+                                        我们如何处理未成年人的个人信息
+                                    </li>
+                                    <li class="privacy-nav-nestedmenu-item" id="#您的个人信息如何进行跨境转移">
+                                        您的个人信息如何进行跨境转移
+                                    </li>
+                                    <li class="privacy-nav-nestedmenu-item" id="#本隐私政策如何更新">
+                                        本隐私政策如何更新
+                                    </li>
+                                    <li class="privacy-nav-nestedmenu-item" id="#如何联系我们">
+                                        如何联系我们
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="privacy-nav-submenu-item privacy-nav-submenu-item-underitems" id="特定产品的隐私保护">
+                                <a href="yinsiquan-sub.html">特定产品的隐私保护</a>
+                            </li>
+
+                            <li class="privacy-nav-submenu-item" id="隐私问题报告">
+                                <a href="#">隐私问题报告</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li  class="privacy-nav-menu-item" id="网民权益保障计划">
+                        <a href="baozhang.html">网民权益保障计划</a>
+                    </li>
+                </ul>
+            </nav>
+
+
+            <div class="privacy-main-container">
+                <div id="aboutToShow">
+                    <main>
+                        <a href="#">
+                            <h1 class="privacy-title privacy-title-gap" >
+                                免责声明
+                            </h1>
+                        </a>
+                        <p class="privacy-paragraph privacy-paragraph-gap">
+                            百度提醒您：在使用百度搜索引擎（以下简称百度）前，请您务必仔细阅读并透彻理解本声明。您可以选择不使用百度，但如果您使用百度，您的使用行为将被视为对本声明全部内容的认可。
+                        </p>
+
+                        <ul class="privacy-ul-gap">
+                            <li class="privacy-paragraph privacy-paragraph-gap-before">
+                                鉴于百度以非人工检索方式、根据您键入的关键字自动生成到第三方网页的链接，除百度注明之服务条款外，其他一切因使用百度而可能遭致的意外、疏忽、侵权及其造成的损失（包括因下载被搜索链接到的第三方网站内容而感染电脑病毒），百度对其概不负责，亦不承担任何法律责任。
+                            </li>
+                            <li class="privacy-paragraph privacy-paragraph-gap-before">
+                                任何通过使用百度而搜索链接到的第三方网页均系他人制作或提供，您可能从该第三方网页上获得资讯及享用服务，百度对其合法性概不负责，亦不承担任何法律责任。
+                            </li>
+                            <li class="privacy-paragraph privacy-paragraph-gap-before">
+                                百度搜索结果根据您键入的关键字自动搜索获得并生成，不代表百度赞成被搜索链接到的第三方网页上的内容或立场。
+                            </li>
+                            <li class="privacy-paragraph privacy-paragraph-gap-before">
+                                您应该对使用搜索引擎的结果自行承担风险。百度不做任何形式的保证：不保证搜索结果满足您的要求，不保证搜索服务不中断，不保证搜索结果的安全性、正确性、及时性、合法性。因网络状况、通讯线路、第三方网站等任何原因而导致您不能正常使用百度，百度不承担任何法律责任。
+                            </li>
+                            <li class="privacy-paragraph privacy-paragraph-gap-before">
+                                百度尊重并保护所有使用百度用户的个人隐私权，您注册的用户名、电子邮件地址等个人资料，非经您亲自许可或根据相关法律、法规的强制性规定，百度不会主动地泄露给第三方。百度提醒您：您在使用搜索引擎时输入的关键字将不被认为是您的个人隐私资料。
+                            </li>
+                            <li class="privacy-paragraph privacy-paragraph-gap-before">
+                                任何网站如果不想被百度收录（即不被搜索到），应该及时向百度反映，或者在其网站页面中根据拒绝蜘蛛协议（Robots Exclusion Protocol）加注拒绝收录的标记，否则，百度将依照惯例视其为可收录网站。
+                            </li>
+                            <li class="privacy-paragraph privacy-paragraph-gap-before">
+                                任何单位或个人认为通过百度搜索链接到的第三方网页内容可能涉嫌侵犯其信息网络传播权，应该及时向百度提出书面权利通知，并提供身份证明、权属证明及详细侵权情况证明。百度在收到上述法律文件后，将会依法尽快断开相关链接内容。详情参见特定频道的著作权保护声明。
+                            </li>
+                        </ul>
+
+                        <ul class="privacy-ul-gap privacy-ul-style">
+                            <li class="privacy-paragraph">
+                                <b>基本信息</b>
+                            </li>
+                            <li class="privacy-paragraph">
+                                <b>北京百度网讯科技有限公司</b>
+                            </li>
+                            <li class="privacy-paragraph">
+                                统一社会信用代码/注册号：91110000802100433B
+                            </li>
+                            <li class="privacy-paragraph">
+                                注册资本：642128万元
+                            </li>
+                            <li class="privacy-paragraph">
+                                法定代表人：梁志祥
+                            </li>
+                            <li class="privacy-paragraph">
+                                成立日期：2001-06-05
+                            </li>
+                            <li class="privacy-paragraph">
+                                营业期限：2001-06-05 至 2021-06-04
+                            </li>
+                            <li class="privacy-paragraph">
+                                企业类型：有限责任公司(自然人投资或控股)
+                            </li>
+                            <li class="privacy-paragraph">
+                                注册地址：北京市海淀区上地十街10号百度大厦2层
+                            </li>
+                            <li class="privacy-paragraph">
+                                经营范围：技术服务、技术培训、技术推广;设计、开发、销售计算机软件;经济信息咨询;利用www;baidu;com、www;hao123;com(www;hao222;net、www;hao222;com)网站发布广告;设计、制作、代理、发布广告;货物进出口、技术进出口、代理进出口;医疗软件技术开发;委托生产电子产品、玩具、照相器材;销售家用电器、机械设备、五金交电、电子产品、文化用品、照相器材、计算机、软件及辅助设备、化妆品、卫生用品、体育用品、纺织品、服装、鞋帽、日用品、家具、首饰、避孕器具、工艺品、钟表、眼镜、玩具、汽车及摩托车配件、仪器仪表、塑料制品、花、草及观赏植物、建筑材料、通讯设备;预防保健咨询;公园门票、文艺演出、体育赛事、展览会票务代理;翻译服务;通讯设备和电子产品的技术开发;计算机系统服务;因特网信息服务业务(除出版、教育、医疗保健以外的内容);第一类增值电信业务中的在线数据处理与交易处理业务、国内因特网虚拟专用网业务、因特网数据中心业务;第二类增值电信业务中的因特网接入服务业务、呼叫中心业务、信息服务业务(不含固定网电话信息服务和互联网信息服务);图书、电子出版物、音像制品批发、零售、网上销售;利用信息网络经营音乐娱乐产品,游戏产品,演出剧(节)目、表演,动漫产品(文化经营许可证有效期至2020年04月17日);演出经纪;人才中介服务;经营电信业务。(企业依法自主选择经营项目,开展经营活动;演出经纪、人才中介服务、经营电信业务以及依法须经批准的项目,经相关部门批准后依批准的内容开展经营活动;不得从事本市产业政策禁止和限制类项目的经营活动。)
+                            </li>
+                        </ul>
+                        <div class="privacy-copyright">
+                                Baidu 京ICP证030173号
+                        </div>
+
+                    </main>
+                </div>
+
+
+                <div class="privacy-appendContainer">
+                </div>
+
+            </div>
 
 
 
-
-</div>
-<div id="main_container">
-<div id="main_content">
-<div id="content">
-	
-
-
-
-
-		
-<p class="date">
-	<span>		  
-	<a href="https://www.cnblogs.com/dstang2000/archive/2010/11/02.html">2010年11月2日</a>
-	</span>
-</p>
-
-		<div class="post">
-			<h2>
-
-<a class="postTitle2" href="https://www.cnblogs.com/dstang2000/archive/2010/11/02/1867406.html">
-    实测:xml与json速度约差4倍
-</a>
-</h2>
-			<div class="postbody">
-			
-
-    <div class="c_b_p_desc">
-摘要：xml与json在javascript中解析并使用，速度大约相差4倍。（在IE中测试的结果）。其中主要不在于eval,与xml parse的时间差别，主要在于属性访问上的差别：xml中使用这样的方式 markers[i].getAttribute("info") 与json中使用这样的方式 var info = markers[i].info;相比， xml要慢不少。以下为测试的详情：代码Code...            <a href="https://www.cnblogs.com/dstang2000/archive/2010/11/02/1867406.html" class="c_b_p_desc_readmore">阅读全文</a>
+        </div>
     </div>
 
-			</div>
-			<p class="postfoot">		
-			
 
-posted @ 2010-11-02 17:43 拓荒者 阅读 (605) 评论 (0)
-<a href="https://i.cnblogs.com/EditPosts.aspx?postid=1867406" rel="nofollow">
-    编辑
-</a>
-
-			</p>
-		</div>
-
-
-		
-<p class="date">
-	<span>		  
-	<a href="https://www.cnblogs.com/dstang2000/archive/2005/10/08.html">2005年10月8日</a>
-	</span>
-</p>
-
-		<div class="post">
-			<h2>
-
-<a class="postTitle2" href="https://www.cnblogs.com/dstang2000/archive/2005/10/08/250188.html">
-    使用 NDoc 对 asp.net (Web) 项目产生文档的方法
-</a>
-</h2>
-			<div class="postbody">
-			
-
-    <div class="c_b_p_desc">
-摘要：NDoc是一个非常好的文档生成工具，现在还出了一些不错的中文版，如破宝的http://www.percyboy.com/w/ndoc/。但是由于NDoc现在的版本1.3 不支持Web项目，也不支持中文文件名，下面提出一个临时性的解决办法1. 解决不认识http://的Web项目的问题方法： （1）将.csproj文件复制一份，其中将项目类型由&#8220;Web&#8221;改为&#8220;Lo...            <a href="https://www.cnblogs.com/dstang2000/archive/2005/10/08/250188.html" class="c_b_p_desc_readmore">阅读全文</a>
-    </div>
-
-			</div>
-			<p class="postfoot">		
-			
-
-posted @ 2005-10-08 12:12 拓荒者 阅读 (1102) 评论 (3)
-<a href="https://i.cnblogs.com/EditPosts.aspx?postid=250188" rel="nofollow">
-    编辑
-</a>
-
-			</p>
-		</div>
-
-
-		
-<p class="date">
-	<span>		  
-	<a href="https://www.cnblogs.com/dstang2000/archive/2005/03/06.html">2005年3月6日</a>
-	</span>
-</p>
-
-		<div class="post">
-			<h2>
-
-<a class="postTitle2" href="https://www.cnblogs.com/dstang2000/archive/2005/03/06/113761.html">
-    小工具RssInIE： 在IE中点右键，可以直接查看RSS
-</a>
-</h2>
-			<div class="postbody">
-			
-
-    <div class="c_b_p_desc">
-摘要：最近RSS越来越流行，一般都需要专用的软件，有时候，在IE中看见的只是xml文件，很不方便。 我这里做了一个小工具，作为IE的插件，使得点右键&#8220;选Rss In IE&#8221;时，可以直接查看RSS。 程序的原理是使用xslt将RSS的xml转成为链接，放到窗口左边，而右边用一个iframe来放内容。 （由于iframe使用得不太好，欢迎提出改进意见）。 下载RssInIE：RssI...            <a href="https://www.cnblogs.com/dstang2000/archive/2005/03/06/113761.html" class="c_b_p_desc_readmore">阅读全文</a>
-    </div>
-
-			</div>
-			<p class="postfoot">		
-			
-
-posted @ 2005-03-06 00:56 拓荒者 阅读 (1503) 评论 (5)
-<a href="https://i.cnblogs.com/EditPosts.aspx?postid=113761" rel="nofollow">
-    编辑
-</a>
-
-			</p>
-		</div>
-
-
-		
-<p class="date">
-	<span>		  
-	<a href="https://www.cnblogs.com/dstang2000/archive/2005/03/05.html">2005年3月5日</a>
-	</span>
-</p>
-
-		<div class="post">
-			<h2>
-
-<a class="postTitle2" href="https://www.cnblogs.com/dstang2000/archive/2005/03/05/113513.html">
-    分不清正数负数，是我错了，还是VS.NET错了
-</a>
-</h2>
-			<div class="postbody">
-			
-
-    <div class="c_b_p_desc">
-摘要：三年前做的一个ASP.NET的项目（www.SurveyStar.net），一直运行好好的， 前几天，客户打电话来说，出了问题。 反复跟踪，发现是一个正数、负数的判断与ToString()的问题。 将问题简化后，源程序可表示为只有4句的程序，如下： class&#160;Test { &#160;&#160;&#160;&#160;static&#160;void&#160;Main() &#16...            <a href="https://www.cnblogs.com/dstang2000/archive/2005/03/05/113513.html" class="c_b_p_desc_readmore">阅读全文</a>
-    </div>
-
-			</div>
-			<p class="postfoot">		
-			
-
-posted @ 2005-03-05 14:45 拓荒者 阅读 (2505) 评论 (5)
-<a href="https://i.cnblogs.com/EditPosts.aspx?postid=113513" rel="nofollow">
-    编辑
-</a>
-
-			</p>
-		</div>
-
-
-
-<div class="topicListFooter">
-    <div id="nav_next_page">
-        
-    
-
-    </div>    
-</div>
-
-
-
-
-
-
-
-
-</div>
-</div>
-<div id="leftmenu">
-
-
-<h3>导航</h3>
-<ul>
-    <li>
-        <a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">
-博客园</a>
-
-    </li>
-    <li>
-        
-<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/dstang2000/">
-首页</a>
-
-    </li>
-    <li>
-        
-
-<a id="blog_nav_newpost" class="menu" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">
-新随笔</a>
-
-    </li>
-    <li>
-        
-<a id="blog_nav_contact" class="menu" href="https://msg.cnblogs.com/send/%E6%8B%93%E8%8D%92%E8%80%85">
-联系</a>
-    </li>
-    <li>
-        
-<a id="blog_nav_rss" class="menu" href="https://www.cnblogs.com/dstang2000/rss/">
-订阅</a>
-        
-<a id="blog_nav_rss_image" href="https://www.cnblogs.com/dstang2000/rss/">
-    <img src="/skins/anothereon001/images/xml.gif" alt="订阅" />
-</a>
-    </li>
-    <li>
-        
-<a id="blog_nav_admin" class="menu" href="https://i.cnblogs.com/">
-管理</a>
-
-    </li>
-</ul>
-
-
-<div id="blog-calendar" style="display:none"></div><script>loadBlogDefaultCalendar();</script>
-
-<div id="sidebar_news" class="newsItem">
-            <script>loadBlogNews();</script>
-</div>
-
-<div id="blog-sidecolumn"></div>
-                    <script>loadBlogSideColumn();</script>
-
-</div>
-</div>
-<div class="clear"></div>
-<div id="footer">
-<p id="footer">
-	Powered by: 
-	<br />
-	
-	
-<a href="https://www.cnblogs.com/" id="Footer1_Hyperlink3" style="font-size: 12px; font-family: Verdana">博客园</a>
-	<br />
-	Copyright &copy; 2020 拓荒者
-<br /><span id="poweredby">Powered by .NET Core on Kubernetes</span>
-
-</p>
-
-
-</div>
-</div>
-
-
-    
+    <script src="./index.js"></script>
 </body>
 </html>

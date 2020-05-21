@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using OrderSystem;
+using OrderServiceWinform;
 
 namespace OrderServiceWinform
 {
@@ -26,8 +26,7 @@ namespace OrderServiceWinform
         public Form1()
         {
             InitializeComponent();
-            os.CalAmount();
-            orderBindingSource.DataSource = os.orderList;
+            orderBindingSource.DataSource = OrderService.TrackAllOrders();
             //绑定查询条件
             QueryBox.DataBindings.Add("Text", this, "queryid");
         }
@@ -46,7 +45,7 @@ namespace OrderServiceWinform
 
         private void QuaryButton_Click(object sender, EventArgs e)
         {
-            if((ItemBox.Text==null ||ItemBox.Text==""|| queryid == null|| queryid == "")) //&& (customerid==null||customerid==""))
+            /*if((ItemBox.Text==null ||ItemBox.Text==""|| queryid == null|| queryid == "")) //&& (customerid==null||customerid==""))
             {
                 orderBindingSource.DataSource = os.orderList.ToList();
             }
@@ -63,12 +62,12 @@ namespace OrderServiceWinform
                    orderBindingSource.DataSource = os.orderList.Where(
                    order => order.CustomerID.ToString() == queryid
                    ).ToList();
-                }
+                }*/
                  
                 //当不存在order满足时，会出现bug!!!!   
                 //加上toList()  已解决
                 
-            }
+            
 
         }
         
@@ -120,34 +119,28 @@ namespace OrderServiceWinform
             {
                 saveFileDialog1.InitialDirectory = "G:\\VS\\repos\\" +
                     "Homework5\\Homework5\\bin\\Debug";
-                os.Export(saveFileDialog1.FileName);
+                OrderService.Export(saveFileDialog1.FileName);
             }
         }
 
         private void DeleteButton_Click(object sender, EventArgs e)
         {
-            int oid = (int)dataGridView1.SelectedRows[0].Cells[0].Value; //获取当前选中行的 订单id
+            //int oid = (int)dataGridView1.SelectedRows[0].Cells[0].Value; //获取当前选中行的 订单id
             //MessageBox.Show(""+a);
-            Order order = os.TrackOrder(oid); //找到这个订单
-            os.DeleteOrder(oid);
-            orderBindingSource.DataSource = os.orderList.ToList();
-            this.orderBindingSource.ResetBindings(false);
-            using (var db = new OrderContext())
+            Order order = orderBindingSource.Current as Order;
+            if (order == null)
             {
-                var ord = db.Orders.Include("OrderItems").FirstOrDefault(o => o.OrderID == order.OrderID);
-                if (ord!=null)
-                {
-                    db.Orders.Remove(ord);
-                }
-                db.SaveChanges();
+                MessageBox.Show("请选择一个订单进行删除");
+                return;
             }
-            
+            OrderService.DeleteOrder(order.OrderID);
+            QueryAll();
+
         }
 
         private void ClearButton_Click(object sender, EventArgs e)
         {
-            os.orderList = new List<Order>();
-            orderBindingSource.DataSource = os.orderList.ToList();
+            orderBindingSource.DataSource = new List<Order>();
             this.orderBindingSource.ResetBindings(false);
         }
 
@@ -158,12 +151,11 @@ namespace OrderServiceWinform
             {
                 foreach (Order order in db.Orders)
                 {
-                    os.orderList.Add(order);
+                    OrderService.AddOrder(order);
                 }
-                orderBindingSource.DataSource = os.orderList.ToList();
+                QueryAll();
                 this.ItembindingSource1.ResetBindings(false);
-                this.orderBindingSource.ResetBindings(false);
-
+               
             }
         }
 
@@ -174,10 +166,15 @@ namespace OrderServiceWinform
                 "\\Homework5\\bin\\Debug";
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
-                os.Import(openFileDialog1.FileName);
-                this.orderBindingSource.ResetBindings(false);
+                OrderService.Import(openFileDialog1.FileName);
+                QueryAll();
                 
             }
+        }
+        private void QueryAll()
+        {
+            orderBindingSource.DataSource = OrderService.TrackAllOrders();
+            orderBindingSource.ResetBindings(false);
         }
     }
 }

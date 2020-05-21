@@ -7,45 +7,53 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using OrderSystem;
+using OrderServiceWinform;
 
 namespace OrderServiceWinform
 {
     public partial class Form2 : Form
     {
-
-        public string createOrderID { get; set; }
-        public string createCustomerID { get; set; }
-        public string createDate { get; set; }
-        public string createProductName { get; set; }
-        public string createProductNum { get; set; }
-
-        public Order addOrder = new Order();
-        public Random random = new Random(Guid.NewGuid().GetHashCode());
-
+        public Order CurrentOrder { get; set; }
         public Form2()
         {
             InitializeComponent();
-
-            CreateOrderID.DataBindings.Add("Text", this, "createOrderID");
-            CreateCustomerID.DataBindings.Add("Text", this, "createCustomerID");
-            CreateProductName.DataBindings.Add("Text", this, "createProductName");
-            CreateProductNum.DataBindings.Add("Text", this, "createProductNum");
+            this.timeLabel.DataBindings.Add("Text", OrderBindingSource, "OrderDate");
+            this.CreateOrderID.DataBindings.Add("Text", OrderBindingSource, "OrderID");
+            List<Customer> customers = CustomerService.GetAll();
+            if (customers.Count == 0)
+            {
+                CustomerService.Add(new Customer("yang"));
+                CustomerService.Add(new Customer("jiao"));
+                CustomerService.Add(new Customer("wang"));
+                customers = CustomerService.GetAll();
+            }
+            customerBindingSource.DataSource = customers;
+            //CreateOrderID.DataBindings.Add("Text", this, "createOrderID");
+            //CreateCustomerID.DataBindings.Add("Text", this, "createCustomerID");
+            //CreateProductName.DataBindings.Add("Text", this, "createProductName");
+            //CreateProductNum.DataBindings.Add("Text", this, "createProductNum");
         }
 
-        private void QueryOrder_Click(object sender, EventArgs e)
+
+        public Form2(Order order, bool editMode = false) : this()
         {
-
+            //TODO 如果想实现不点保存只关窗口后订单不变化，需要把order深克隆给CurrentOrder
+            CurrentOrder = order;
+            OrderBindingSource.DataSource = CurrentOrder;
+            CreateOrderID.Enabled = !editMode;
+            if (!editMode)
+            {
+                CurrentOrder.Customer = (Customer)customerBindingSource.Current;
+            }
         }
 
-        private void tabPage2_Click(object sender, EventArgs e)
-        {
+       
 
-        }
 
         private void CreateOrder_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+          
+           
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -55,36 +63,77 @@ namespace OrderServiceWinform
 
         private void CreateButton_Click(object sender, EventArgs e)
         {
+                //TODO 加上订单合法性验证
+                CurrentOrder.CustomerID = CurrentOrder.Customer.CustomerID;
+                CurrentOrder.Customer = null;
+                CurrentOrder.orderItems.ForEach(item => {
+                    item.GoodsID = item.GoodsItem.GoodsID;
+                    item.GoodsItem = null;
+                    item.OrderId = CurrentOrder.OrderID;
+                });
+
+                this.Close();
+       
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AddItemButton_Click(object sender, EventArgs e)
+        {
+            ItemEdit itemEdit = new ItemEdit(new OrderItem());
             try
             {
-                addOrder.OrderID = Convert.ToInt32(createOrderID);
-                addOrder.CustomerID = Convert.ToInt32(createCustomerID);
-                addOrder.orderItems.Add(new OrderItem(Convert.ToInt32(createProductNum), 
-                    random.Next(1, 200) * 10 + 1000, createProductName));
-                //添加订单
-                using (var db=new OrderContext())
+                if (itemEdit.ShowDialog() == DialogResult.OK)
                 {
-                    var order = new Order { OrderID = addOrder.OrderID,
-                      CustomerID = addOrder.CustomerID };
-                    order.OrderDate = DateTime.Now.ToString();
-                    //var order = addOrder;
-                    order.orderItems = new List<OrderItem>()
-                    {
-                        new OrderItem(Convert.ToInt32(createProductNum),
-                            random.Next(1, 200) * 10 + 1000, createProductName){}
-                    };
-                    order.Calculate();
-                    db.Orders.Add(order);
-                    db.SaveChanges();
-                    MessageBox.Show("添加成功！");
+                   
+                    CurrentOrder.AddItem(itemEdit.OrderItem);
+                    ItemBindingSource.ResetBindings(false);
                 }
-
-
             }
-            catch (Exception ex)
+            catch (Exception e2)
             {
-                MessageBox.Show("Error:" + ex.Message);
+                MessageBox.Show(e2.Message);
             }
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void DeleteItemButton_Click(object sender, EventArgs e)
+        {
+            OrderItem orderItem = ItemBindingSource.Current as OrderItem;
+            if (orderItem == null)
+            {
+                MessageBox.Show("请选择一个订单项进行删除");
+                return;
+            }
+            CurrentOrder.RemoveItem(orderItem);
+            ItemBindingSource.ResetBindings(false);
+        }
+
+        private void EditItem()
+        {
+            OrderItem orderItem = ItemBindingSource.Current as OrderItem;
+            if (orderItem == null)
+            {
+                MessageBox.Show("请选择一个订单项进行修改");
+                return;
+            }
+            ItemEdit formItemEdit = new ItemEdit(orderItem);
+            if (formItemEdit.ShowDialog() == DialogResult.OK)
+            {
+                ItemBindingSource.ResetBindings(false);
+            }
+        }
+
+        private void ModifyItemButton_Click(object sender, EventArgs e)
+        {
+            EditItem();
         }
     }
 }

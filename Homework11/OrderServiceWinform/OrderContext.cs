@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OrderSystem
+namespace OrderServiceWinform
 {
     public class OrderContext:DbContext
     {
@@ -17,5 +17,8 @@ namespace OrderSystem
 
         public DbSet<Order> Orders { get; set; }
         public DbSet<OrderItem> OrderItems { get; set; }
+        public DbSet<Goods> GoodItems { get; set; }
+        public DbSet<Customer> Customers { get; set; }
+
     }
 }

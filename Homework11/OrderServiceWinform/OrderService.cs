@@ -6,118 +6,158 @@ using System.Threading.Tasks;
 using System.Xml;
 using System.Xml.Serialization;
 using System.IO;
+using System.Data.Entity;
 
-namespace OrderSystem
+namespace OrderServiceWinform
 {
     [Serializable]
     public class OrderService
     {
-        public List<Order> orderList = new List<Order>();
-        public bool AddOrder(Order order)
+        private static IQueryable<Order> AllOrders(OrderContext db)
         {
-            if (this.TrackOrder(order.OrderID) == null)
+            return db.Orders.Include(o => o.orderItems.Select(i => i.GoodsItem))
+                      .Include("Customer");
+        }
+    
+        public static Order AddOrder(Order order)
+        {
+            try
             {
-                this.orderList.Add(order);
-                return true;
+                using (var db = new OrderContext())
+                {
+                    db.Orders.Add(order);
+                    db.SaveChanges();
+                }
+                return order;
             }
-            else
+            catch (Exception e)
             {
-                return false;
+                throw new ApplicationException($"添加错误: {e.Message}");
             }
         }
 
-        public void DeleteOrder(int id)
+        public static void DeleteOrder(string id)
         {
-            this.orderList.Remove(TrackOrder(id));
+            try
+            {
+                using (var db = new OrderContext())
+                {
+                    var order = db.Orders.Include("Items").Where(o => o.OrderID == id).FirstOrDefault();
+                    db.Orders.Remove(order);
+                    db.SaveChanges();
+                }
+            }
+            catch (Exception e)
+            {
+                //TODO 需要更加错误类型返回不同错误信息
+                throw new ApplicationException($"删除订单错误!");
+            }
         }
-        public void DeleteOrder(int cid,int a) 
+
+        public static void DeleteOrder(string cid,int a) 
             //通过客户ID删除 a为冗余参数  一个客户可能有多个订单
         {
-            foreach(Order or in TrackOrder(cid, 1))
+            using (var db = new OrderContext())
             {
-                this.orderList.Remove(or);
+                var orders = db.Orders.Where(o => o.CustomerID == cid);
+                db.Orders.RemoveRange(orders);
+                db.SaveChanges();
+            }
+
+        }
+        private static void RemoveItems(string orderId)
+        {
+            using (var db = new OrderContext())
+            {
+                var oldItems = db.OrderItems.Where(item => item.OrderId == orderId);
+                db.OrderItems.RemoveRange(oldItems);
+                db.SaveChanges();
             }
         }
-        public void ModifyOrder()
+        public static void ModifyOrder(Order newOrder)
         {
-
+            RemoveItems(newOrder.OrderID);
+            using (var db = new OrderContext())
+            {
+                db.Entry(newOrder).State = EntityState.Modified;
+                db.OrderItems.AddRange(newOrder.orderItems);
+                db.SaveChanges();
+            }
 
         }
-        public Order TrackOrder(int id) 
+        public static Order TrackOrder(string id) 
             //重载查询方法，用来添加，修改，删除的时候查看是否含有要操作的订单
         {
             //通过订单id来查询
-            var query = orderList.Where(order => order.OrderID == id);
-            return query.FirstOrDefault();
+            using (var db = new OrderContext())
+            {
+                return AllOrders(db).FirstOrDefault(o => o.OrderID == id);
+            }
         }
-        public List<Order> TrackOrder(int cid, int a) 
+        public static List<Order> TrackOrder(string cid, int a) 
             //通过客户ID查询 a为冗余参数  一个客户可能有多个订单
         {
             //通过客户id来查询  按照订单总金额排序
-            var query = orderList.Where(order => order.CustomerID == cid).
+            using (var db = new OrderContext())
+            {
+                var query = AllOrders(db).Where(order => order.CustomerID == cid).
                 OrderBy(order => order.OrderAmount);
-            return query.ToList();
-        }
-        public List<Order> Sort()
-        {
-            //按照订单ID排序
-            return orderList.Where(order => order.CustomerID > 0).
-                OrderBy(order => order.OrderID).ToList();
+                return query.ToList();
+            }
+          
         }
 
-        public List<Order> Sort(int way)
+        public static List<Order> TrackAllOrders()
         {
-            if(way==1)
+            using (var db = new OrderContext())
             {
-                //按照订单ID排序
-                return orderList.Where(order => order.CustomerID > 0).
-                    OrderBy(order => order.OrderID).ToList();
-            }
-            else
-                return orderList.Where(order => order.CustomerID > 0).
-                    OrderBy(order => order.OrderAmount).ToList();
-        }
-        public void CalAmount()//计算订单总金额
-        {
-            foreach (Order order in orderList)
-            {
-                foreach (OrderItem ot in order.orderItems)
-                {
-                    order.OrderAmount += ot.ProductPrice * ot.ProductNum;
-                }
+                return AllOrders(db).ToList();
             }
         }
-        public String printOrder(List<Order> list)
+
+        public static List<Order> QueryOrdersByGoodsName(string goodsName)
         {
-            String Orderstr = null;
-            foreach(Order ord in list)
+            using (var db = new OrderContext())
             {
-                Orderstr += ord + "\n";
+                var query = AllOrders(db)
+                  .Where(o => o.orderItems.Count(i => i.GoodsItem.Name == goodsName) > 0);
+                return query.ToList();
             }
-            return Orderstr;
         }
-        public String Export(String fileName) //fileName传递文件名
+        public static List<Order> QueryOrdersByCustomerName(string customerName)
+        {
+            using (var db = new OrderContext())
+            {
+                var query = AllOrders(db)
+                  .Where(o => o.Customer.Name == customerName);
+                return query.ToList();
+            }
+        }
+      
+        
+      
+        public static void Export(String fileName) //fileName传递文件名
         {
             //将所有订单序列化为XML文件
             XmlSerializer xmlserializer = new XmlSerializer(typeof(Order[]));
             using (FileStream fs = new FileStream(fileName, FileMode.Create))
             {
-                xmlserializer.Serialize(fs, orderList.ToArray());
+                xmlserializer.Serialize(fs, TrackAllOrders());
             }
-            return File.ReadAllText(fileName);
         }
-        public List<Order> Import(String fileName)
+
+        public static void Import(String fileName)
         {
             XmlSerializer xmlserializer = new XmlSerializer(typeof(Order[]));
             //从XML文件中载入订单 
             using (FileStream fs = new FileStream(fileName, FileMode.Open))
             {
-                Order[] orderlist2 = (Order[])xmlserializer.Deserialize(fs);
-                foreach(Order o in orderlist2) //导入订单
+                List<Order> temp = (List<Order>)xmlserializer.Deserialize(fs);
+                foreach(Order o in temp) //导入订单
                 {
-                    this.AddOrder(o);
+                    AddOrder(o);
                 }
-                return orderlist2.ToList();
+                
             }
         }
     }

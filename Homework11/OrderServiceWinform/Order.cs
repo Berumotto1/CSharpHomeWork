@@ -1,42 +1,43 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OrderSystem
+namespace OrderServiceWinform
 {
     public class Order:IComparable
     {
-        public int OrderID { get; set; }  //主键
-        public String OrderDate { get; set; } //订单交易时间
-        public int CustomerID { get; set; } //外键
+        public string OrderID { get; set; }  //主键
+        public DateTime OrderDate { get; set; } //订单交易时间
+        public string CustomerID { get; set; } //外键
+
+        [ForeignKey("CustomerID")]
+        public Customer Customer { get; set; }
         public int OrderAmount { get; set; } //交易总额
         public List<OrderItem> orderItems { get; set; }
+      
+
         public Order()
         {
+            OrderID = Guid.NewGuid().ToString();
             orderItems = new List<OrderItem>();
+            OrderDate = DateTime.Now;
         }
-        public Order(int orderID, int customerID)
+
+        public Order(Customer customer, List<OrderItem> items) : this()
         {
-            orderItems = new List<OrderItem>();
-            OrderID = orderID;
-            CustomerID = customerID;
-        }
-        public Order(int orderID, int customerID,OrderItem ot1,OrderItem ot2)
-        {
-            orderItems = new List<OrderItem>();
-            OrderID = orderID;
-            CustomerID = customerID;
-            this.orderItems.Add(ot1);
-            this.orderItems.Add(ot2); 
+            this.Customer = customer;
+            this.OrderDate = DateTime.Now;
+            if (items != null) orderItems = items;
         }
 
         public void Calculate()
         {
             foreach (OrderItem ot in this.orderItems)
             {
-                this.OrderAmount += ot.ProductPrice * ot.ProductNum;
+                this.OrderAmount += ot.GoodsPrice * ot.GoodsNum;
             }
             
         }
@@ -49,6 +50,20 @@ namespace OrderSystem
             }
             return Otstr;
         }
+
+
+        public void AddItem(OrderItem orderItem)
+        {
+            if (orderItems.Contains(orderItem))
+                throw new ApplicationException($"添加错误：订单项已经存在!");
+            orderItems.Add(orderItem);
+        }
+
+        public void RemoveItem(OrderItem orderItem)
+        {
+            orderItems.Remove(orderItem);
+        }
+
         public override string ToString()
         {
             return ($"OrderID:{OrderID}\tCustomerID:{CustomerID}\tOrderItems:\n{PrintList()}OrderAmount:{OrderAmount}\tOrderDate:{OrderDate}\n");
@@ -68,16 +83,18 @@ namespace OrderSystem
                    OrderID == order.OrderID &&
                    OrderDate == order.OrderDate &&
                    CustomerID == order.CustomerID &&
+                   EqualityComparer<Customer>.Default.Equals(Customer, order.Customer) &&
                    OrderAmount == order.OrderAmount &&
                    EqualityComparer<List<OrderItem>>.Default.Equals(orderItems, order.orderItems);
         }
 
         public override int GetHashCode()
         {
-            var hashCode = 257297109;
-            hashCode = hashCode * -1521134295 + OrderID.GetHashCode();
-            hashCode = hashCode * -1521134295 + EqualityComparer<string>.Default.GetHashCode(OrderDate);
-            hashCode = hashCode * -1521134295 + CustomerID.GetHashCode();
+            var hashCode = -1922707514;
+            hashCode = hashCode * -1521134295 + EqualityComparer<string>.Default.GetHashCode(OrderID);
+            hashCode = hashCode * -1521134295 + OrderDate.GetHashCode();
+            hashCode = hashCode * -1521134295 + EqualityComparer<string>.Default.GetHashCode(CustomerID);
+            hashCode = hashCode * -1521134295 + EqualityComparer<Customer>.Default.GetHashCode(Customer);
             hashCode = hashCode * -1521134295 + OrderAmount.GetHashCode();
             hashCode = hashCode * -1521134295 + EqualityComparer<List<OrderItem>>.Default.GetHashCode(orderItems);
             return hashCode;

@@ -97,9 +97,9 @@
             this.comboBox1.DataSource = this.customerBindingSource;
             this.comboBox1.DisplayMember = "Name";
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(295, 68);
+            this.comboBox1.Location = new System.Drawing.Point(262, 71);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(200, 23);
+            this.comboBox1.Size = new System.Drawing.Size(282, 23);
             this.comboBox1.TabIndex = 18;
             // 
             // customerBindingSource
@@ -197,7 +197,7 @@
             // timeLabel
             // 
             this.timeLabel.AutoSize = true;
-            this.timeLabel.Location = new System.Drawing.Point(292, 106);
+            this.timeLabel.Location = new System.Drawing.Point(259, 106);
             this.timeLabel.Name = "timeLabel";
             this.timeLabel.Size = new System.Drawing.Size(71, 15);
             this.timeLabel.TabIndex = 12;
@@ -205,6 +205,7 @@
             // 
             // CreateButton
             // 
+            this.CreateButton.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.CreateButton.Location = new System.Drawing.Point(549, 344);
             this.CreateButton.Name = "CreateButton";
             this.CreateButton.Size = new System.Drawing.Size(127, 31);
@@ -216,7 +217,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(206, 106);
+            this.label1.Location = new System.Drawing.Point(169, 106);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(67, 15);
             this.label1.TabIndex = 6;
@@ -224,15 +225,15 @@
             // 
             // CreateOrderID
             // 
-            this.CreateOrderID.Location = new System.Drawing.Point(295, 25);
+            this.CreateOrderID.Location = new System.Drawing.Point(262, 28);
             this.CreateOrderID.Name = "CreateOrderID";
-            this.CreateOrderID.Size = new System.Drawing.Size(200, 25);
+            this.CreateOrderID.Size = new System.Drawing.Size(282, 25);
             this.CreateOrderID.TabIndex = 4;
             // 
             // order
             // 
             this.order.AutoSize = true;
-            this.order.Location = new System.Drawing.Point(221, 28);
+            this.order.Location = new System.Drawing.Point(188, 31);
             this.order.Name = "order";
             this.order.Size = new System.Drawing.Size(52, 15);
             this.order.TabIndex = 2;
@@ -241,7 +242,7 @@
             // customer
             // 
             this.customer.AutoSize = true;
-            this.customer.Location = new System.Drawing.Point(232, 68);
+            this.customer.Location = new System.Drawing.Point(199, 71);
             this.customer.Name = "customer";
             this.customer.Size = new System.Drawing.Size(37, 15);
             this.customer.TabIndex = 1;

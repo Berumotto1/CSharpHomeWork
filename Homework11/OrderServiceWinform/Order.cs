@@ -17,7 +17,7 @@ namespace OrderServiceWinform
         public Customer Customer { get; set; }
         public int OrderAmount { get; set; } //交易总额
         public List<OrderItem> orderItems { get; set; }
-      
+        public string CustomerName { get => (Customer != null) ? Customer.Name : ""; }
 
         public Order()
         {

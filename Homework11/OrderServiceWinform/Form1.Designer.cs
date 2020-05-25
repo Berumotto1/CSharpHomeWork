@@ -31,12 +31,8 @@
             this.components = new System.ComponentModel.Container();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.CreateOrder = new System.Windows.Forms.ToolStripMenuItem();
-            this.QueryOrder = new System.Windows.Forms.ToolStripMenuItem();
             this.ModifyOrder = new System.Windows.Forms.ToolStripMenuItem();
-            this.DeleteOrder = new System.Windows.Forms.ToolStripMenuItem();
             this.ImportOrder = new System.Windows.Forms.ToolStripMenuItem();
-            this.mysqlToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.computerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.OutputOrder = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
@@ -74,9 +70,7 @@
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.CreateOrder,
-            this.QueryOrder,
             this.ModifyOrder,
-            this.DeleteOrder,
             this.ImportOrder,
             this.OutputOrder});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
@@ -93,12 +87,6 @@
             this.CreateOrder.Text = "添加订单";
             this.CreateOrder.Click += new System.EventHandler(this.CreateOrder_Click);
             // 
-            // QueryOrder
-            // 
-            this.QueryOrder.Name = "QueryOrder";
-            this.QueryOrder.Size = new System.Drawing.Size(81, 26);
-            this.QueryOrder.Text = "查询订单";
-            // 
             // ModifyOrder
             // 
             this.ModifyOrder.Name = "ModifyOrder";
@@ -106,35 +94,12 @@
             this.ModifyOrder.Text = "修改订单";
             this.ModifyOrder.Click += new System.EventHandler(this.ModifyOrder_Click);
             // 
-            // DeleteOrder
-            // 
-            this.DeleteOrder.Name = "DeleteOrder";
-            this.DeleteOrder.Size = new System.Drawing.Size(81, 26);
-            this.DeleteOrder.Text = "删除订单";
-            // 
             // ImportOrder
             // 
-            this.ImportOrder.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mysqlToolStripMenuItem,
-            this.computerToolStripMenuItem});
             this.ImportOrder.Name = "ImportOrder";
             this.ImportOrder.Size = new System.Drawing.Size(81, 26);
             this.ImportOrder.Text = "导入订单";
             this.ImportOrder.Click += new System.EventHandler(this.ImportOrder_Click);
-            // 
-            // mysqlToolStripMenuItem
-            // 
-            this.mysqlToolStripMenuItem.Name = "mysqlToolStripMenuItem";
-            this.mysqlToolStripMenuItem.Size = new System.Drawing.Size(156, 26);
-            this.mysqlToolStripMenuItem.Text = "mysql";
-            this.mysqlToolStripMenuItem.Click += new System.EventHandler(this.mysqlToolStripMenuItem_Click);
-            // 
-            // computerToolStripMenuItem
-            // 
-            this.computerToolStripMenuItem.Name = "computerToolStripMenuItem";
-            this.computerToolStripMenuItem.Size = new System.Drawing.Size(156, 26);
-            this.computerToolStripMenuItem.Text = "computer";
-            this.computerToolStripMenuItem.Click += new System.EventHandler(this.computerToolStripMenuItem_Click);
             // 
             // OutputOrder
             // 
@@ -241,8 +206,10 @@
             // 
             this.ItemBox.FormattingEnabled = true;
             this.ItemBox.Items.AddRange(new object[] {
-            "订单ID",
-            "客户ID"});
+            "全部订单",
+            "客户",
+            "交易总额",
+            "商品"});
             this.ItemBox.Location = new System.Drawing.Point(25, 11);
             this.ItemBox.Margin = new System.Windows.Forms.Padding(25, 11, 10, 3);
             this.ItemBox.Name = "ItemBox";
@@ -314,9 +281,10 @@
             // 
             // customerIDDataGridViewTextBoxColumn
             // 
-            this.customerIDDataGridViewTextBoxColumn.DataPropertyName = "CustomerID";
+            this.customerIDDataGridViewTextBoxColumn.DataPropertyName = "CustomerName";
             this.customerIDDataGridViewTextBoxColumn.HeaderText = "客户";
             this.customerIDDataGridViewTextBoxColumn.Name = "customerIDDataGridViewTextBoxColumn";
+            this.customerIDDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // orderDateDataGridViewTextBoxColumn
             // 
@@ -360,9 +328,7 @@
 
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem CreateOrder;
-        private System.Windows.Forms.ToolStripMenuItem QueryOrder;
         private System.Windows.Forms.ToolStripMenuItem ModifyOrder;
-        private System.Windows.Forms.ToolStripMenuItem DeleteOrder;
         private System.Windows.Forms.ToolStripMenuItem ImportOrder;
         private System.Windows.Forms.ToolStripMenuItem OutputOrder;
         private System.Windows.Forms.Panel panel1;
@@ -383,8 +349,6 @@
         private System.Windows.Forms.ComboBox ItemBox;
         private System.Windows.Forms.Button DeleteButton;
         private System.Windows.Forms.Button ClearButton;
-        private System.Windows.Forms.ToolStripMenuItem mysqlToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem computerToolStripMenuItem;
         private System.Windows.Forms.DataGridViewTextBoxColumn orderItemIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn goodsNameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn goodsNumDataGridViewTextBoxColumn;

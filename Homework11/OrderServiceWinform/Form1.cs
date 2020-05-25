@@ -20,7 +20,7 @@ namespace OrderServiceWinform
         public string createProductNum { get; set; }
         
         public List<Order> orderList = new List<Order>();
-        public string queryid { get; set; }
+        public string queryContent { get; set; }
         public string customerid { get; set; }
         OrderService os = new OrderService();
         public Form1()
@@ -28,7 +28,7 @@ namespace OrderServiceWinform
             InitializeComponent();
             orderBindingSource.DataSource = OrderService.TrackAllOrders();
             //绑定查询条件
-            QueryBox.DataBindings.Add("Text", this, "queryid");
+            QueryBox.DataBindings.Add("Text", this, "queryContent");
         }
 
 
@@ -39,35 +39,37 @@ namespace OrderServiceWinform
 
         private void CreateOrder_Click(object sender, EventArgs e)
         {
-            Form form2 = new Form2();
-            form2.ShowDialog();
+            Form2 form2 = new Form2(new Order());
+            if (form2.ShowDialog() == DialogResult.OK)
+            {
+                OrderService.AddOrder(form2.CurrentOrder);
+                QueryAll();
+            }
         }
 
         private void QuaryButton_Click(object sender, EventArgs e)
         {
-            /*if((ItemBox.Text==null ||ItemBox.Text==""|| queryid == null|| queryid == "")) //&& (customerid==null||customerid==""))
+            switch (ItemBox.Text)
             {
-                orderBindingSource.DataSource = os.orderList.ToList();
+                case "全部订单":
+                    orderBindingSource.DataSource = OrderService.TrackAllOrders();
+                    break;
+                case "客户":
+                    orderBindingSource.DataSource = OrderService.TrackOrderByCustomerName(queryContent);
+                    break;
+                case "交易总额":
+                    float.TryParse(queryContent, out float totalPrice);
+                    orderBindingSource.DataSource =
+                           OrderService.TrackOrderByTotalAmount(totalPrice);
+                    break;
+                case "商品":
+                    orderBindingSource.DataSource = OrderService.TrackOrderByGoodsName(queryContent);
+                    break;
+
             }
-            else
-            {
-                if(ItemBox.Text=="订单ID")
-                {
-                    orderBindingSource.DataSource = os.orderList.Where(
-                    order => order.OrderID.ToString() == queryid
-                    ).ToList();
-                }
-                else
-                {
-                   orderBindingSource.DataSource = os.orderList.Where(
-                   order => order.CustomerID.ToString() == queryid
-                   ).ToList();
-                }*/
-                 
-                //当不存在order满足时，会出现bug!!!!   
-                //加上toList()  已解决
-                
-            
+
+            //当不存在order满足时，会出现bug!!!!   
+            //加上toList()  已解决
 
         }
         
@@ -84,12 +86,32 @@ namespace OrderServiceWinform
 
         private void ModifyOrder_Click(object sender, EventArgs e)
         {
-            this.orderBindingSource.ResetBindings(false);
-            this.ItembindingSource1.ResetBindings(false);
+            Order order = orderBindingSource.Current as Order;
+            if (order == null)
+            {
+                MessageBox.Show("请选择一个订单进行修改");
+                return;
+            }
+            order = OrderService.TrackOrder(order.OrderID); //查询出最新的订单信息
+            Form2 form2 = new Form2(order, true);
+            if (form2.ShowDialog() == DialogResult.OK)
+            {
+                OrderService.UpdateOrder(form2.CurrentOrder);
+                QueryAll();
+            }
+            //this.orderBindingSource.ResetBindings(false);
+            //this.ItembindingSource1.ResetBindings(false);
         }
 
         private void ImportOrder_Click(object sender, EventArgs e)
         {
+            DialogResult result = openFileDialog1.ShowDialog();
+            if (result.Equals(DialogResult.OK))
+            {
+                String fileName = openFileDialog1.FileName;
+                OrderService.Import(fileName);
+                QueryAll();
+            }
             /*openFileDialog1.InitialDirectory = "G:\\VS\\repos\\Homework5" +
                 "\\Homework5\\bin\\Debug";
             if (openFileDialog1.ShowDialog()==DialogResult.OK)
@@ -143,34 +165,8 @@ namespace OrderServiceWinform
             orderBindingSource.DataSource = new List<Order>();
             this.orderBindingSource.ResetBindings(false);
         }
-
-        private void mysqlToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            //从数据库导入订单
-            using (var db = new OrderContext())
-            {
-                foreach (Order order in db.Orders)
-                {
-                    OrderService.AddOrder(order);
-                }
-                QueryAll();
-                this.ItembindingSource1.ResetBindings(false);
-               
-            }
-        }
-
-        private void computerToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            //从xml文件导入订单
-            openFileDialog1.InitialDirectory = "G:\\VS\\repos\\Homework5" +
-                "\\Homework5\\bin\\Debug";
-            if (openFileDialog1.ShowDialog() == DialogResult.OK)
-            {
-                OrderService.Import(openFileDialog1.FileName);
-                QueryAll();
-                
-            }
-        }
+        
+       
         private void QueryAll()
         {
             orderBindingSource.DataSource = OrderService.TrackAllOrders();

@@ -16,12 +16,13 @@ namespace OrderServiceWinform
         public ItemEdit()
         {
             InitializeComponent();
-            this.txtQuantity.DataBindings.Add("Text", ItemBindingSource, "GoodsNum");
-
+           
         }
         public ItemEdit(OrderItem orderItem) : this()
         {
             this.OrderItem = orderItem;
+            this.txtQuantity.DataBindings.Add("Text", OrderItem, "GoodsNum");
+            this.comboBox1.DataBindings.Add("Text", OrderItem, "GoodsName");
             this.ItemBindingSource.DataSource = orderItem;
             List<Goods> goods = GoodsService.GetAll();
             if (goods.Count == 0)
@@ -32,6 +33,7 @@ namespace OrderServiceWinform
                 goods = GoodsService.GetAll();
             }
             goodsBindingSource.DataSource = goods;
+            orderItem.GoodsItem = (Goods)goodsBindingSource.Current;
         }
 
         private void ItemEdit_Load(object sender, EventArgs e)
@@ -41,6 +43,9 @@ namespace OrderServiceWinform
 
         private void btnOK_Click(object sender, EventArgs e)
         {
+            //this.OrderItem.GoodsName = comboBox1.Text;
+            //this.OrderItem.GoodsNum = txtQuantity.Text;
+
             ItemBindingSource.ResetBindings(false);
         }
     }

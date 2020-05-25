@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using OrderServiceWinform;
 
 namespace OrderServiceWinform
 {
@@ -17,6 +16,7 @@ namespace OrderServiceWinform
         public Form2()
         {
             InitializeComponent();
+            //this.DialogResult = DialogResult.OK;
             this.timeLabel.DataBindings.Add("Text", OrderBindingSource, "OrderDate");
             this.CreateOrderID.DataBindings.Add("Text", OrderBindingSource, "OrderID");
             List<Customer> customers = CustomerService.GetAll();
@@ -56,30 +56,6 @@ namespace OrderServiceWinform
            
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void CreateButton_Click(object sender, EventArgs e)
-        {
-                //TODO 加上订单合法性验证
-                CurrentOrder.CustomerID = CurrentOrder.Customer.CustomerID;
-                CurrentOrder.Customer = null;
-                CurrentOrder.orderItems.ForEach(item => {
-                    item.GoodsID = item.GoodsItem.GoodsID;
-                    item.GoodsItem = null;
-                    item.OrderId = CurrentOrder.OrderID;
-                });
-
-                this.Close();
-       
-        }
-
-        private void Form2_Load(object sender, EventArgs e)
-        {
-
-        }
 
         private void AddItemButton_Click(object sender, EventArgs e)
         {
@@ -88,7 +64,6 @@ namespace OrderServiceWinform
             {
                 if (itemEdit.ShowDialog() == DialogResult.OK)
                 {
-                   
                     CurrentOrder.AddItem(itemEdit.OrderItem);
                     ItemBindingSource.ResetBindings(false);
                 }
@@ -98,6 +73,28 @@ namespace OrderServiceWinform
                 MessageBox.Show(e2.Message);
             }
         }
+
+        private void CreateButton_Click(object sender, EventArgs e)
+        {
+            CurrentOrder.Customer = (Customer)customerBindingSource.Current;
+            //TODO 加上订单合法性验证
+            CurrentOrder.CustomerID = CurrentOrder.Customer.CustomerID;
+            //Customer c=(Customer)customerBindingSource.Current;
+                CurrentOrder.Customer = null;
+                CurrentOrder.orderItems.ForEach(item => {
+                    item.GoodsID = item.GoodsItem.GoodsID;
+                    item.GoodsItem = null;
+                    item.OrderId = CurrentOrder.OrderID;
+                });
+                this.Close();
+       
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
+        }
+
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {

@@ -42,7 +42,7 @@ namespace OrderServiceWinform
             {
                 using (var db = new OrderContext())
                 {
-                    var order = db.Orders.Include("Items").Where(o => o.OrderID == id).FirstOrDefault();
+                    var order = db.Orders.Include("OrderItems").Where(o => o.OrderID == id).FirstOrDefault();
                     db.Orders.Remove(order);
                     db.SaveChanges();
                 }
@@ -85,26 +85,44 @@ namespace OrderServiceWinform
             }
 
         }
-        public static Order TrackOrder(string id) 
-            //重载查询方法，用来添加，修改，删除的时候查看是否含有要操作的订单
+
+        public static void UpdateOrder(Order newOrder)
         {
-            //通过订单id来查询
+            RemoveItems(newOrder.OrderID);
             using (var db = new OrderContext())
             {
-                return AllOrders(db).FirstOrDefault(o => o.OrderID == id);
+                db.Entry(newOrder).State = EntityState.Modified;
+                db.OrderItems.AddRange(newOrder.orderItems);
+                db.SaveChanges();
             }
         }
-        public static List<Order> TrackOrder(string cid, int a) 
-            //通过客户ID查询 a为冗余参数  一个客户可能有多个订单
+        public static List<Order> TrackOrderByCustomerName(string CustomerName) 
         {
-            //通过客户id来查询  按照订单总金额排序
             using (var db = new OrderContext())
             {
-                var query = AllOrders(db).Where(order => order.CustomerID == cid).
-                OrderBy(order => order.OrderAmount);
+                var query = AllOrders(db).Where(o => o.Customer.Name == CustomerName);
                 return query.ToList();
             }
-          
+        }
+
+        public static object TrackOrderByTotalAmount(float amount)
+        {
+            using (var db = new OrderContext())
+            {
+                return AllOrders(db)
+                  .Where(o => o.orderItems.Sum(item => item.GoodsItem.Price * item.GoodsNum) > amount)
+                  .ToList();
+            }
+        }
+
+        public static object TrackOrderByGoodsName(string goodsName)
+        {
+            using (var db = new OrderContext())
+            {
+                var query = AllOrders(db)
+                        .Where(o => o.orderItems.Count(i => i.GoodsItem.Name == goodsName) > 0);
+                return query.ToList();
+            }
         }
 
         public static List<Order> TrackAllOrders()
@@ -115,31 +133,22 @@ namespace OrderServiceWinform
             }
         }
 
-        public static List<Order> QueryOrdersByGoodsName(string goodsName)
+        public static Order TrackOrder(string id)
         {
             using (var db = new OrderContext())
             {
-                var query = AllOrders(db)
-                  .Where(o => o.orderItems.Count(i => i.GoodsItem.Name == goodsName) > 0);
-                return query.ToList();
+                return AllOrders(db).FirstOrDefault(o => o.OrderID == id);
             }
         }
-        public static List<Order> QueryOrdersByCustomerName(string customerName)
-        {
-            using (var db = new OrderContext())
-            {
-                var query = AllOrders(db)
-                  .Where(o => o.Customer.Name == customerName);
-                return query.ToList();
-            }
-        }
-      
-        
-      
+
+
+
+
+
         public static void Export(String fileName) //fileName传递文件名
         {
             //将所有订单序列化为XML文件
-            XmlSerializer xmlserializer = new XmlSerializer(typeof(Order[]));
+            XmlSerializer xmlserializer = new XmlSerializer(typeof(List<Order>));
             using (FileStream fs = new FileStream(fileName, FileMode.Create))
             {
                 xmlserializer.Serialize(fs, TrackAllOrders());
@@ -148,14 +157,21 @@ namespace OrderServiceWinform
 
         public static void Import(String fileName)
         {
-            XmlSerializer xmlserializer = new XmlSerializer(typeof(Order[]));
+            XmlSerializer xmlserializer = new XmlSerializer(typeof(List<Order>));
             //从XML文件中载入订单 
             using (FileStream fs = new FileStream(fileName, FileMode.Open))
             {
                 List<Order> temp = (List<Order>)xmlserializer.Deserialize(fs);
                 foreach(Order o in temp) //导入订单
                 {
-                    AddOrder(o);
+                    try
+                    {
+                        AddOrder(o);
+                    }
+                    catch
+                    {
+                    }
+                    
                 }
                 
             }

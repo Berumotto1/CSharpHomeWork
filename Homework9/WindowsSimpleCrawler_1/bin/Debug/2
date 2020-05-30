@@ -1,1 +1,198 @@
-﻿body{font-size:14px;font-family:Verdana,Arial,Helvetica,sans-serif;margin-left:20px;margin-right:20px;margin-top:0;margin-bottom:10px;padding:30px;padding-bottom:10px;padding-top:0;background-color:#d9d6cb}img{border:0}td{font-size:14px}a{color:#235;text-decoration:none}.blog_comment_body a{text-decoration:underline}a:hover{text-decoration:underline}#header h1{margin:0;padding-top:5px;font-size:1.8em;margin-left:5px}#header h1 a:visited,#header h1 a:active,#header h1 a:link,#header h1 a:hover{color:#fff;margin-top:10px;text-decoration:none}h2{margin-top:10px;font-size:1em}h5{margin:0;padding:0}#top{background-color:#20375f;height:75px;vertical-align:middle;color:#ccc;padding-left:10px}#top td{color:#ccc;width:100%}#sub{text-align:right;background-color:#000;color:#ccc;font-size:14px;padding:4px;padding-left:10px}.headermaintitle{font-family:"Trebuchet MS";padding-bottom:10px;color:#ccc}#subtitle{color:#fff;font-size:1em;margin-top:10px;margin-left:6px}p.date img{vertical-align:middle}p.date{font-size:1.2em;font-weight:bold;margin-bottom:0;padding:2px 0;color:#aaa;text-align:right}p.date span{background-color:#fff}p.date a{color:#888}blockquote{background-color:#eee;border:0;border-left:18px solid #ccc;padding:4px;margin:0}#leftmenu{float:left;left:0;width:190px;padding:0;padding-bottom:5px;padding-left:5px;overflow:hidden;background-color:#eee}#leftmenu h3{font-size:14px;margin:0;padding:4px;border-bottom:1px solid #bbb}#leftmenu ul{list-style:none;margin:5px;padding:0;margin-left:8px;margin-bottom:5px;font-size:13px}#leftmenu li{display:block;margin-bottom:2px}#leftmenu a:active,#leftmenu a:visited,#leftmenu a:link{display:inline-block;color:#000;text-decoration:none;margin-right:0;padding:0}#leftmenu a:hover{background-color:#ccd5e0}#main_content{float:right;margin-left:-200px;width:100%}#content{margin-left:194px;padding-right:0;margin-right:0;border-left:1px solid #ddd;border-bottom:1px solid #ddd;padding:10px;background-color:#fff}#content h2{font-size:20px}#content h3{font-size:18px;padding-left:10px;margin-left:10px;margin-right:10px}#content h4{font-size:16px;line-height:1.5;font-weight:normal;padding-left:10px;margin-left:10px;margin-right:10px}#content .post{font-size:14px;line-height:1.8;padding-left:10px}#footer{margin:0;padding-top:5px;text-align:center;font-size:14px}input.text{width:300px}textarea{width:300px;height:200px}#comments h4 span{color:#999}#comments h4{margin:0;font-size:.9em}p{margin:0;margin-bottom:14px}h3{font-size:1.2em;border-bottom:1px solid #aaa}#relatedlinks ul{list-style:none;margin-left:10px;padding:0}.post{border:1px solid #ccc;border-bottom-width:2px;border-right-width:2px;padding:4px;margin-bottom:28px}.postbody a{color:#1d58d1}.post h5,.post h2{font-size:14px;margin:0;margin-bottom:4px}.post .postfoot{margin:0;margin-top:14px;color:#aaa;border-top:1px solid #ddd;font-size:14px}pre{margin:0;margin-left:22px;font-size:1em}.Textbox,textarea{border:1px solid #aaa;width:100%}.button{border:1px solid #aaa;background-color:#ccd4e0}input,textarea{font-family:Verdana,Geneva,Arial,Sans-Serif;font-size:14px}.Framework{border:1px solid #000;background-color:#eee;width:100%}.LeftCell{width:200px;vertical-align:top}.FooterCell{vertical-align:top}.commentTextBox{font-size:14px;font-family:Arial}.Cal{border:1px solid #999;width:180px;font-family:Arial;font-size:13px;margin-top:10px;margin-bottom:10px;height:180px;background-color:#eee;margin-left:0}.CalTitle{background-color:#b6b6b6;border-color:#adf;font-family:Arial;font-size:14px;color:#000;margin-left:0;padding:0;height:100%;font-weight:bold}.CalOtherMonthDay{color:#808080}.CalDayHeader{background-color:#ccc}.CalTodayDay{color:#00f;font-weight:bolder}p{margin-top:0;margin-bottom:0}blockquote{width:80%}div.RecentComment{width:180px}#profile_block{margin-left:10px}.two_words{letter-spacing:12px}#myposts h3{padding:5px 0;margin:0}
+﻿
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>全国互联网安全管理服务平台</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="/css/bootstrap.css?v=2018.11.26" rel="stylesheet" media="screen">
+	<link href="/css/bootstrap-responsive.css?v=2018.11.26" rel="stylesheet" media="screen">
+	<link href="/css/css.css?v=2018.11.26" rel="stylesheet" media="screen">
+	<link href="/css/css2.css?v=2018.11.26" rel="stylesheet" media="screen">
+	<link href="/css/loginform.css?v=2018.11.26" rel="stylesheet" /> 
+  	<link href="/css/nismsp.css?v=2018.11.26" rel="stylesheet" /> 
+	<script type="text/javascript" src="/js/custom/lubotu.js?v=2018.11.26"></script>
+	<script src="/js/jquery.js"></script>
+	<script type="text/javascript">
+	var taken_for_user = 'fbaac8eb-3ab4-4b51-9e15-40a438284ffe';
+	</script>
+	<script type="text/javascript" src="/js/custom/defaultToken.js?v=2018.11.26"></script>
+	<script src="/js/custom/recordquery.js?v=2018.11.26"></script>
+</head>
+<body>
+ <div class="wrapper">
+	<!-- 页面头 -->
+    
+ 
+	<div class="top-part"> 
+	    <!-- 氛围 --> 
+	    <div class="hj-top-banner"></div> 
+	    <!-- 头部搜索 --> 
+	    <div class="search-bar-area"> 
+		    	<div class="doodle-wrapper"> 
+		     		<a  class="" href="#"><img  src="/img/logo.png" /> </a> 
+		    	</div> 
+		    <div class="search-input-wrapper"> 
+		    	<div class="search-input"> 
+		     		<i class="hui-icon hui-icon-search"></i> 
+		       		<input type="text" placeholder="备案查询" value="" data-empty-link="#" /> 
+		       		<div class="autocompletion-list-wrapper"></div> 
+		      	</div> 
+		      	<a class="btn-search" href="javascript:void(0);" onclick="window.location.href='/portal/recordQuery?token=fbaac8eb-3ab4-4b51-9e15-40a438284ffe'">查询</a> 
+		   </div> 
+    	</div>
+	</div>
+	<div class="dsp-banner-area"> 
+		<div class="course-menu-area"> 
+			 <ul class="course-menu-list clearfix"> 
+			  <li class='active'><a class="menu-name " href="/portal/index" target="_blank"><span>首页</span> </a> </li> 
+			  <li ><a class="menu-name" href="/portal/recordQuery" target="_blank"><span>公共查询</span> </a> </li> 
+			  <li ><a class="menu-name" href="/portal/recordInform" target="_blank"><span>常见问题</span> </a> </li> 
+			  <li ><a class="menu-name" href="/portal/recordIssue" target="_blank"><span>法规文件</span> </a> </li> 
+			  <li ><a class="menu-name" href="/portal/recordNotice" target="_blank"><span>通知公告</span> </a> </li> 
+			  <li ><a class="menu-name" href="/portal/recordPolicies" target="_blank"><span>备案须知</span> </a> </li> 
+			  <li ><a class="menu-name" href="/portal/recordShow" target="_blank" onclick="loading()"><span>备案展厅</span> </a> </li> 
+			 </ul> 
+		</div> 
+	</div>
+	
+  <!--  <script type="text/javascript">
+	   function loading(){
+		   document.getElementById("over").style.display = "block";
+		   document.getElementById("layout").style.display = "block";
+	   }
+	</script> -->
+	<!-- start:内容 -->
+    <div class="p_exinfo"> 
+      <!-- start:备案信息 -->
+      <div class="exinf_title" style='margin-left:125px;margin-left:10px;'>
+        <p><img src="/img/beianbgs.png" width="100%" height="100px">
+        <h3>联网备案信息</h3>
+      </div>
+      <div style="clear:both;"></div>
+      <div class="p_cont">
+        <strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        		为了保护网络信息安全，保障公民、法人和其他组织的合法权益，维护国家安全和社会公共利益，
+        		公安机关将备案网站的基本情况公布如下：
+        </strong>
+        <div class="wzjb">
+          <h5>网站基本情况</h5>
+          <table class="" width="100%" border="1">
+              <tbody>
+                <tr>
+                  <td width="30%">网站名称</td>
+                  <td width="70%">唐大仕个人网站</td>
+                </tr>
+                <tr>
+                  <td width="30%">网站主域名</td>
+                  <td width="70%">dstang.com</td>
+                </tr>
+                
+                <tr>
+                  <td width="30%">开办主体</td>
+                  <td width="70%">个人</td>
+                </tr>
+                <tr>
+                  <td width="30%">网站类别</td>
+                  <td width="70%">非交互式</td>
+                </tr>
+              </tbody>
+            </table>
+        </div>
+        <div class="wzjb">
+          <h5>网站所有者基本情况</h5>
+          <table class="" width="100%" border="1">
+              <tbody>
+                
+               	
+                <tr>
+                  <td width="30%">开办者名称</td>
+                  <td width="70%">唐大仕</td>
+                </tr>
+                
+                
+                <tr>
+                  <td width="30%">公安备案号</td>
+                  <td width="70%">11010802023082</td>
+                </tr>
+                <tr>
+                  <td width="30%">备案地公安机关 </td>
+                  <td width="70%">北京市海淀驻区大队</td>
+                </tr>
+                <tr>
+                  <td width="30%">联网备案时间</td>
+                  <td width="70%">2017-03-21</td>
+                </tr>
+              </tbody>
+            </table>
+        </div>
+        <strong >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;您如果发现该网站在网络经营活动中存在违反国家法律、法规的经营行为，请登录<a href="http://cyberpolice.mps.gov.cn/wfjb" target="_blank">网络违法犯罪举报网站</a>进行举报。</strong>
+      </div>
+      <!-- end:备案信息 -->
+    </div>
+    <div style="clear:both;"></div>
+    <!-- end:内容 -->
+	</div>
+	<!-- 页面尾 -->
+	
+	<link href="/css/nismsp2.css?v=2018.11.26" rel="stylesheet" />
+	<div id="footer-ft" class=" hui-footer">
+	<div class="hui-footer-ft">
+	<div class="hui-footer-ft-row">
+	<p> 邮箱：support@beian.gov.cn&nbsp;&nbsp;&nbsp;&nbsp;邮编：100741&nbsp;&nbsp;&nbsp;&nbsp;地址：北京市长安街14号&nbsp;&nbsp;&nbsp;&nbsp;网站标识码：bm09000026 </p>
+	</div>
+	<div class="hui-footer-ft-row-icon">
+	<div class="hui-footer-ft-icon">
+	<div class="hui-footer-ft-icon-1">
+	<img src="/img/new/garment.png" />
+	</div>
+	<div class="hui-footer-ft-icon-2">
+	<div class="hui-footer-ft-row">
+	<p class="hui-footer-ft-oncall"> <span>Copyright 公安部网络安全保卫局 All Rights Reserved</span> </p>
+	</div>
+	<div class="hui-footer-ft-row">
+	<p class="hui-footer-ft-contact"> <span><img src="/img/new/gongan.png" />京公网安备 11010102002019号 &nbsp;&nbsp;&nbsp;&nbsp;</span><a href="http://www.beian.miit.gov.cn/" target="_blank">京ICP备05070602号</a> </p>
+	</div>
+	</div>
+	<div class="hui-footer-ft-icon-1">
+	<img src="/img/new/erweima.png" />
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+<script type="text/javascript">
+	$("a").each(function(index,obj){
+		if($(obj).attr("href") != undefined){
+			if(($(obj).attr("href")).indexOf('/')>=0){
+			    if($(obj).attr("href").indexOf("?")>=0){
+					 $(obj).attr("href",$(obj).attr("href")+"&token="+taken_for_user);
+		 	    }else{
+		 	    	$(obj).attr("href",$(obj).attr("href")+"?token="+taken_for_user);
+		 	    }
+			}
+		}
+	});
+
+	$("a").on("click",function(event){
+	//	    event.preventDefault();//使a自带的方法失效，即无法调整到href中的URL(http://www.baidu.com)
+	//	    $.ajax({
+	//	           type: "POST",
+	//	           url: "url地址",
+	//	           contentType:"application/json",
+	//	           data: JSON.stringify({param1:param1,param2:param2}),//参数列表
+	//	           dataType:"json",
+	//	           success: function(result){
+	//	              //请求正确之后的操作
+	//	           },
+	//	           error: function(result){
+	//	              //请求失败之后的操作
+	//	           }
+	//	    });
+	});
+</script>
+
+</body>
+</html>

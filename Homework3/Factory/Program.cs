@@ -1,10 +1,9 @@
-﻿using System;
+﻿using Homework3;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
-using Homework3;
 
 namespace work2
 {
@@ -32,8 +31,9 @@ namespace work2
                 Console.WriteLine();
             }
             Console.WriteLine("总面积为:"+SumArea);
-
+            Console.Read();
         }
+        
     }
 
 

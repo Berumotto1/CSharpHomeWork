@@ -23,6 +23,7 @@ namespace HomeWork2
             {
                 Console.WriteLine("数据格式输入错误！");
             }
+            Console.Read();
         }
 
         //求因子的函数

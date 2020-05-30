@@ -1,398 +1,320 @@
-﻿<!DOCTYPE HTML>
-<HTML>
-	<HEAD>
-		<meta charset="utf-8">
-		<title>唐大仕出版物、相关资料下载</title>
-		
-		<META name="Keywords" content="唐大仕,教材,书,mooc,慕课,程序设计,Java,C#,VB,几何画板,Geogebra,教程,源程序,下载,手机,移动,北京大学" >
-		<META content="唐大仕" name="Author">
-		<!--base target="_blank"-->
-		<style> .bookname{font-size: 24pt; color: #000040}
-	a{font-size: 11pt;}
-	</style>
-	</HEAD>
-	<BODY style="FONT-SIZE: 10pt; COLOR: #000080">
-	<table border=0 cellpadding=0><tr><td style="font-size: 9pt">
-			<!--
-			<a name="idx"></a>相关链接：
-			<br>
-			-->
-			<!--br>
-			SurveyStar 网络问卷调查系统 <a href='http://www.surveystar.net'>http://www.surveystar.net</a-->
-			唐大仕个人主页 <a href='http://www.dstang.com'>http://www.dstang.com</a>
-			<!--
-			<br>
-			北京大学《文科计算机基础(上)》教学主页 <a href='http://cf.pku.cn/tds/cf1'>http://cf.pku.cn/tds/cf1</a> 本站备份<a href="http://www.dstang.com/cf1">http://www.dstang.com/cf1</a>
-			<br>
-			北京大学《文科计算机基础(下)》（Visual Basic程序设计)教学主页 <a href='http://cf.pku.cn/tds/cf2'>http://cf.pku.cn/tds/cf2</a>
-			本站备份<a href="http://www.dstang.com/cf2">http://www.dstang.com/cf2</a>
-			<br>
-			北京大学《Java程序设计》教学主页 <a href='http://cf.pku.cn/tds/java'>http://cf.pku.cn/tds/java</a>
-			本站备份<a href="http://www.dstang.com/java">http://www.dstang.com/java</a>
-			<br>
-			北京大学《C#程序设计及应用》教学主页 <a href='http://cf.pku.cn/tds/csharp'>http://cf.pku.cn/tds/csharp</a>
-			本站备份<a href="http://www.dstang.com/csharp">http://www.dstang.com/csharp</a>
-			<br>
-			北京大学远程教育《Visual Basic程序设计》《计算机应用基础》<a href='vb-remote-syllabus.doc' target="_blank">教学安排(校本部)</a><a href="http://www.pkudl.cn">课程论坛</a>&nbsp;及<a href="#vb3">资料下载</a>
-			<br>
-			!-->
+﻿<!DOCTYPE html>
+<!--STATUS OK-->
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta content="always" name="referrer">
+    <script src="https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/nocache/imgdata/seErrorRec.js"></script>
+    <title>页面不存在_百度搜索</title>
+    <style data-for="result">
+        body {color: #333; background: #fff; padding: 0; margin: 0; position: relative; min-width: 700px; font-family: arial; font-size: 12px }
+        p, form, ol, ul, li, dl, dt, dd, h3 {margin: 0; padding: 0; list-style: none }
+        input {padding-top: 0; padding-bottom: 0; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box } img {border: none; }
+        .logo {width: 117px; height: 38px; cursor: pointer }
+         #wrapper {_zoom: 1 }
+        #head {padding-left: 35px; margin-bottom: 20px; width: 900px }
+        .fm {clear: both; position: relative; z-index: 297 }
+        .btn, #more {font-size: 14px } 
+        .s_btn {width: 95px; height: 32px; padding-top: 2px\9; font-size: 14px; padding: 0; background-color: #ddd; background-position: 0 -48px; border: 0; cursor: pointer }
+        .s_btn_h {background-position: -240px -48px }
+        .s_btn_wr {width: 97px; height: 34px; display: inline-block; background-position: -120px -48px; *position: relative; z-index: 0; vertical-align: top }
+        #foot {}
+        #foot span {color: #666 }
+        .s_ipt_wr {height: 32px }
+        .s_form:after, .s_tab:after {content: "."; display: block; height: 0; clear: both; visibility: hidden }
+        .s_form {zoom: 1; height: 55px; padding: 0 0 0 10px }
+        #result_logo {float: left; margin: 7px 0 0 }
+        #result_logo img {width: 101px }
+        #head {padding: 0; margin: 0; width: 100%; position: absolute; z-index: 301; min-width: 1000px; background: #fff; border-bottom: 1px solid #ebebeb; position: fixed; _position: absolute; -webkit-transform: translateZ(0) }
+        #head .head_wrapper {_width: 1000px }
+        #head.s_down {box-shadow: 0 0 5px #888 }
+        .fm {clear: none; float: left; margin: 11px 0 0 10px }
+        #s_tab {background: #f8f8f8; line-height: 36px; height: 38px; padding: 55px 0 0 121px; float: none; zoom: 1 }
+        #s_tab a, #s_tab b {width: 54px; display: inline-block; text-decoration: none; text-align: center; color: #666; font-size: 14px }
+        #s_tab b {border-bottom: 2px solid #38f; font-weight: bold; color: #323232 }
+        #s_tab a:hover {color: #323232 }
+        #content_left {width: 540px; padding-left: 121px; padding-top: 5px }
+        .to_tieba, .to_zhidao_bottom {margin: 10px 0 0 121px }
+        #help {background: #f5f6f5; zoom: 1; padding: 0 0 0 50px; float: right }
+        #help a {color: #777; padding: 0 15px; text-decoration: none }
+        #help a:hover {color: #333 }
+        #foot {position: fixed; bottom:0; width: 100%; background: #f5f6f5; border-top: 1px solid #ebebeb; text-align: left; height: 42px; line-height: 42px; margin-top: 40px; *margin-top: 0; _position:absolute; _bottom:auto; _top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10)||0))); }
 
-		<!--相关课件<a href='http://cf.pku.edu.cn/tds/courseware/VB/index.htm'>Visual Basic课件</a>
-			<br>
-		<td><img src="images/dstang_code.gif" width=132>-->
-		</table>
-		<p><span style="FONT-SIZE:20pt"><b>唐大仕出版物、相关资料下载</b></span>
-		&nbsp;
-		<p></p>
-		&nbsp;&nbsp;&nbsp;&nbsp; ---- 问题、建议，请致 <a href="mailto:dstang2000@263.net">dstang2000@263.net</a>
-		或 <a href='http://www.dstang.com'>http://www.dstang.com</a> 或进入相应的BBS讨论区
-		<p>
-		<span style="color:red;background-color:yellow">唐大仕老师</span>在coursera、edx、<span style="color:red;background-color:yellow">中国大学慕课,</span>、华文慕课、网易云课堂上开设有<span style="color:red;background-color:yellow">慕课《Java程序设计》《C#程序设计》《动态几何画板Geogebra教学应用》</span>，每门课都有100段左右的短视频，<span style="color:red;background-color:yellow">可以免费学习，赶快加入吧！</span>
+        .content_none {padding: 45px 0 25px 121px } .s_ipt_wr.bg,
+        .s_btn_wr.bg, #su.bg {background-image: none }
+        .s_ipt_wr.bg {background: 0 }
+        .s_btn_wr {width: auto; height: auto; border-bottom: 1px solid transparent; *border-bottom: 0 }
+        .s_btn {width: 100px; height: 34px; color: white; letter-spacing: 1px; background: #3385ff; border-bottom: 1px solid #2d78f4; outline: medium; *border-bottom: 0; -webkit-appearance: none; -webkit-border-radius: 0 }
+        .s_btn:hover {background: #317ef3; border-bottom: 1px solid #2868c8; *border-bottom: 0; box-shadow: 1px 1px 1px #ccc }
+        .s_btn:active {background: #3075dc; box-shadow: inset 1px 1px 3px #2964bb; -webkit-box-shadow: inset 1px 1px 3px #2964bb; -moz-box-shadow: inset 1px 1px 3px #2964bb; -o-box-shadow: inset 1px 1px 3px #2964bb }
+        #lg {display: none }
+        #head .headBlock {margin: -5px 0 6px 121px }
+        #content_left .leftBlock {margin-bottom: 14px; padding-bottom: 5px; border-bottom: 1px solid #f3f3f3 }
+        .s_ipt_wr {border: 1px solid #b6b6b6; border-color: #7b7b7b #b6b6b6 #b6b6b6 #7b7b7b; background: #fff; display: inline-block; vertical-align: top; width: 539px; margin-right: 0; border-right-width: 0; border-color: #b8b8b8 transparent #ccc #b8b8b8; overflow: hidden }
+        .s_ipt_wr.ip_short {width: 439px; }
+        .s_ipt_wr:hover, .s_ipt_wr.ipthover {border-color: #999 transparent #b3b3b3 #999 }
+        .s_ipt_wr.iptfocus {border-color: #4791ff transparent #4791ff #4791ff }
+        .s_ipt_tip {color: #aaa; position: absolute; z-index: -10; font: 16px/22px arial; height: 32px; line-height: 32px; padding-left: 7px; overflow: hidden; width: 526px }
+        .s_ipt {width: 526px; height: 22px; font: 16px/18px arial; line-height: 22px\9; margin: 6px 0 0 7px; padding: 0; background: transparent; border: 0; outline: 0; -webkit-appearance: none }
+        #kw {position: relative;display: inline-block;}
+        input::-ms-clear {display: none }
+        /*Error page css*/
+        .norsSuggest {display: inline-block; color: #333; font-family: arial; font-size: 13px; position: relative; } 
+        .norsTitle {font-size: 22px; font-family: Microsoft Yahei; font-weight: normal; color: #333; margin: 35px 0 25px 0; }
+        .norsTitle2 {font-family: arial; font-size: 13px; color: #666; }
+        .norsSuggest ol {margin-left: 47px; }
+        .norsSuggest li {margin: 13px 0; }
+        #content_right {
+    border-left: 1px solid #e1e1e1;
+    width: 384px;
+    margin-top: 25px;
+    float: right;
+    padding-left: 17px;
+}
+#wrapper_wrapper {
+    width: 1212px;
+}
+.cr-content {
+    width: 351px;
+    font-size: 13px;
+    line-height: 1.54em;
+    color: #333;
+    margin-top: 6px;
+    margin-bottom: 28px;
+    word-wrap: break-word;
+    word-break: normal;
+}
+@media screen and (max-width: 1217px) {
+    #wrapper_wrapper {
+        width: 1002px;
+    }
+    #wrapper_wrapper #content_right {
+        width: 271px;
+    }
+    #wrapper_wrapper .cr-content {
+        width: 259px;
+    }
+}
+.opr-toplist-title {
+    position: relative;
+    font-size: 14px;
+    line-height: 1.29em;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.opr-toplist-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 13px;
+}
+.opr-toplist-table th,td {
+    line-height: 1.54;
+    border-bottom: 1px solid #f3f3f3;
+    text-align: left;
+}
+.opr-toplist-table thead th {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-weight: 400;
+    color: #666;
+    white-space: nowrap;
+    background-color: #fafafa;  
+}
+.opr-toplist-table .opr-toplist-right {
+    text-align: right;
+    white-space: nowrap;
+}
+.opr-toplist-table td {
+    width: 100%;
+    font-size: 13px;
+    padding-top: 6.5px;
+    padding-bottom: 6.5px;
+    vertical-align: top;
+}
+.opr-toplist-table a:hover {
+    text-decoration: underline;
+}
+.opr-index-item {
+    display: inline-block;
+    padding:1px 0;
+    color: #fff;
+    width: 14px;
+    line-height: 100%;
+    font-size: 12px;
+    text-align: center;
+    background-color: #8eb9f5;
+    margin-right: 5px;
+}
+.opr-index-hot1 {
+    background-color: #f54545;
+}
 
-		<br/>
-		<a href="geogebra_commands.html">Geogebra指令中英文对应查询</a>
-<style>
-bb{font-color:red; font-weight:10; }
-</style>
+.opr-index-hot2 {
+    background-color: #ff8547;
+}
+.opr-index-hot3 {
+    background-color: #ffac38;
+}
+.opr-item-text {
+    text-decoration: none;  
+}
+.opr-toplist-info {
+    color: #666;
+    text-align: right;
+    margin-top: 5px;
+}
+.opr-toplist-info>a {
+    color: #666;
+}
+    </style>
+</head>
 
-<br/>
-在 <b>中国大学慕课</b> 上搜索“<b>唐大仕</b>”，
-<br>或者直接访问 <a href="http://www.icourse163.org/course/PKU-1001941004
-">http://www.icourse163.org/course/PKU-1001941004
-</a>可进入“Java程序设计”；
-<br>
-<a href="http://www.icourse163.org/course/PKU-1001663016">http://www.icourse163.org/course/PKU-1001663016</a>可进入“C#程序设计”；
-<br>
-<a href="http://www.icourse163.org/course/icourse-1002415002">http://www.icourse163.org/course/icourse-1002415002</a>可进入“动态几何画板Geogebra教学应用”。
+<body link="#0000cc">
+    <div id="wrapper" class="wrapper_l">
+        <div id="head">
+            <div class="head_wrapper">
+                <div class="s_form">
+                    <div class="s_form_wrapper">
+                        <a href="//www.baidu.com/" id="result_logo"><img src="//www.baidu.com/img/baidu_jgylogo3.gif" alt="到百度首页" title="到百度首页"></a>
+                        <form id="form" name="f" action="//www.baidu.com/s" class="fm">
+                            <input type="hidden" name="ie" value="utf-8">
+                            <input type="hidden" name="f" value="8">
+                            <input type="hidden" name="rsv_bp" value="1">
+                            <input type="hidden" name="ch" value="">
+                            <input type="hidden" name="tn" value="baiduerr">
+                            <input type="hidden" name="bar" value="">
+                            <span class="bg s_ipt_wr iptfocus">
+                                <input id="kw" name="wd" class="s_ipt" value="" maxlength="255" autocomplete="off" autofocus>
+                            </span><span class="bg s_btn_wr">
+                                <input type="submit" id="su" value="百度一下" class="bg s_btn">
+                            </span>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="s_tab" id="s_tab">
+        <b>网页</b>
+        <a href="http://tieba.baidu.com/f?kw=&fr=wwwt" wdfield="kw">贴吧</a>
+        <a href="http://zhidao.baidu.com/q?ct=17&pn=0&tn=ikaslist&rn=10&word=&fr=wwwt" wdfield="word">知道</a>
+        <a href="http://music.baidu.com/search?fr=ps&ie=utf-8&key=" wdfield="key">音乐</a>
+        <a href="http://image.baidu.com/i?tn=baiduimage&ps=1&ct=201326592&lm=-1&cl=2&nc=1&ie=utf-8&word=" wdfield="word">图片</a>
+        <a href="http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=25&ie=utf-8&word=" wdfield="word">视频</a>
+        <a href="http://map.baidu.com/m?word=&fr=ps01000" wdfield="word">地图</a>
+        <a href="http://wenku.baidu.com/search?word=&lm=0&od=0&ie=utf-8" wdfield="word">文库</a>
+        <a href="//www.baidu.com/more/">更多»</a>
+    </div>
+    <div id="wrapper_wrapper">
+        <div id="content_left">
+            <div class="nors">
+                <div class="norsSuggest">
+                    <h3 class="norsTitle">很抱歉，您要访问的页面不存在！</h3>
+                    <p class="norsTitle2">温馨提示：</p>
+                    <ol>
+                        <li>请检查您访问的网址是否正确</li>
+                        <li>如果您不能确认访问的网址，请浏览<a href="//www.baidu.com/more/index.html">百度更多</a>页面查看更多网址。</li>
+                        <li>回到顶部重新发起搜索</li>
+                        <li>如有任何意见或建议，请及时<a href="http://qingting.baidu.com/index">反馈给我们</a>。</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="foot">
+        <span id="help" style="float:left;padding-left:121px">
+            <a href="http://help.baidu.com/question" target="_blank">帮助</a>
+            <a href="http://www.baidu.com/search/jubao.html" target="_blank">举报</a>
+            <a href="http://jianyi.baidu.com" target="_blank">给百度提建议</a>
+        </span>
+    </div>
+</body>
+<script>
+(function () {
+        var LOGURL = 'https://sp1.baidu.com/5b1ZeDe5KgQFm2e88IuM_a/cm.gif';
+        var params = 'type=wwwerror&terminal=www';
+        var img = new Image();
+        img.src = LOGURL + '?' + params;
+    })();
+    (function () {
+        if(window.recommend && window.recommend.query && window.recommend.query.length > 0) {
+            var recommendWrapper = document.createElement('div');
+            var recommendHtml = '<div class="cr-content"><div class="opr-toplist-title">' + window.recommend.title + '</div><table class="opr-toplist-table"><thead><tr><th>排名</th></tr></thead>';
+            var queryArray = window.recommend.query;
+            var itemUrl = '';
+            for(var i = 1; i < (queryArray.length+1); i++) {
+                itemUrl = '//www.baidu.com/s?word=' + encodeURIComponent(queryArray[i-1].word) + '&sa=' + queryArray[i-1].sa + '&tn=' + queryArray[i-1].tn;
+                if (queryArray[i-1].rsv_dl) {
+                    itemUrl += "&rsv_dl=" + queryArray[i-1].rsv_dl;
+                }
+                
+                if (i < 4) {
+                    recommendHtml += '<tr><td><span class="opr-index-hot' + i + ' opr-index-item">' + i + '</span><a target="_blank" href="' + itemUrl +'" class="opr-item-text">' + queryArray[i-1].word + '</a></td></tr>';
+                } else {
+                    recommendHtml += '<tr><td><span class="opr-index-item">' + i + '</span><a target="_blank" href="' + itemUrl +'" class="opr-item-text">' + queryArray[i-1].word + '</a></td></tr>';
+                }
+            }
+            recommendHtml += '</tbody></table><div class="opr-toplist-info"><span>来源：</span><a target="_blank" href="http://www.baidu.com/link?url=sLR63PtaB7kc3YkTtzDy1k3mbTm1DXDMu-nLcijZx8DmWgOff4lBxqmY-LGDyHqw">百度风云榜</a><span>&nbsp;-&nbsp;</span><a target="_blank" href="http://www.baidu.com/link?url=01vNBVXR2eaJxETl9PI3hcrvKCcwaJIKk5FkpO7l5YI_Q_pC24ogIBoZxI0LAu5oYpAdhRH42nzxAqfui0YnHK">实时热点</a></div></div>';
+            recommendWrapper.setAttribute('id', 'content_right');
+            document.getElementById('wrapper_wrapper').insertBefore(recommendWrapper, document.getElementById('content_left'));
+            var recommend = document.getElementById('content_right');
+            recommend.innerHTML = recommendHtml;
+        }
+})();
+(function(){
+    var bds = {
+        util: {}
+    };
+    var c = document.getElementById('kw').parentNode;
 
+    bds.util.getWinWidth = function(){
+        return window.document.documentElement.clientWidth;
+    };
 
-<br/><br>
-在 <b>coursera</b> 上搜索“<b>java程序设计</b>”，或者直接访问 <a href="https://www.coursera.org/learn/java-chengxu-sheji">https://www.coursera.org/learn/java-chengxu-sheji</a>
+    bds.util.setFormWidth = function(){
+        var width = bds.util.getWinWidth();
+        if(width < 1217)    {bds.util.setClass(c, 'ip_short', 'add')}
+        else                {bds.util.setClass(c, 'ip_short', 'remove')};
+    };
 
-<br/>
-在 <b>edx</b> 上搜索“<b>java程序设计</b>”，或者直接访问 <a href="https://www.edx.org/course/javacheng-xu-she-ji-java-programming-pekingx-04830340x">https://www.edx.org/course/javacheng-xu-she-ji-java-programming-pekingx-04830340x</a>
+    bds.util.setClass = function(obj, class_name, set) {
+        var ori_class = obj.className,
+            has_class_p = -1,
+            ori_class_arr = [],
+            new_class = '';
 
-<br/>
-在 <b>华文慕课</b> 上搜索“<b>java程序设计</b>”，或者直接访问 <a href="http://www.chinesemooc.org/mooc/4746">http://www.chinesemooc.org/mooc/4746</a>
+        if(ori_class.length) ori_class_arr = ori_class.split(' ');
 
-<br/>
-在 <b>coursera</b> 上搜索“<b>C#程序设计</b>”，或者直接访问 <a href="https://www.coursera.org/learn/sheng-c-biancheng">https://www.coursera.org/learn/sheng-c-biancheng</a>
+        for( i in ori_class_arr) {
+            if(ori_class_arr[i] == class_name) has_class_p = i;
+        }
 
-<br/>
-在 <b>网易云课堂</b> 上搜索“<b>唐大仕</b>”或“<b>C#程序设计</b>”，或者进入课程体系的大学计算机微专业，或者直接访问 
-<a href="http://mooc.study.163.com/course/PKU-1000003003#/info">C#程序设计(上)</a> 及 
-<a href="http://mooc.study.163.com/course/PKU-1000003006#/info">C#程序设计(下)</a>
+        if( set == 'remove' && has_class_p >= 0) {
+            ori_class_arr.splice(has_class_p, 1);
+            new_class = ori_class_arr.join(' ');
+            obj.className = new_class;
+        } else if( set == 'add' && has_class_p < 0) {
+            ori_class_arr.push(class_name);
+            new_class = ori_class_arr.join(' ');
+            obj.className = new_class;
+        }
+    }
+    bds.util.setFormWidth();
 
-<br/>
-在 <b>中国大学慕课</b> 上搜索“<b>唐大仕</b>”或“<b>C#程序设计</b>”，或者直接访问 
-<a href="http://www.icourse163.org/course/pku-1001663016#/info">C#程序设计</a> 
-好消息：免费学习，而且优秀者还有奖学金！
+    if (typeof document.addEventListener != "undefined") {
+        window.addEventListener('resize', bds.util.setFormWidth, false);
+        document.getElementById('kw').addEventListener('focus', function(){bds.util.setClass(c,'iptfocus', 'add');}, false);
+        document.getElementById('kw').addEventListener('blur', function(){bds.util.setClass(c,'iptfocus', 'remove');}, false);
+    } else {
+        window.attachEvent('onresize', bds.util.setFormWidth, false);
+        document.getElementById('kw').attachEvent('onfocus', function(){bds.util.setClass(c,'iptfocus', 'add');}, false);
+        document.getElementById('kw').attachEvent('onblur', function(){bds.util.setClass(c,'iptfocus', 'remove');}, false);
+    } 
 
-<br/>
-在 <b>网易云课堂</b> 上搜索“<b>大仕老师</b>”或“<b>考前强化</b>”，或者直接访问 
-<a href="http://study.163.com/course/introduction.htm?courseId=1003496008#/courseDetail">网络统考《计算机基础》考前强化</a> 
-
-
-
-
-		<!--
-		<a href="https://www.coursera.org/course/pkujava">https://www.coursera.org/course/pkujava</a>
-		</span>
-		<p>
-		<span style="color:red;background-color:yellow">大仕老师开设的慕课《C#程序设计（下）》于2015年4月1日开课，赶快加入吧。
-		<a href="http://mooc.study.163.com/course/PKU-1000003006#/info">http://mooc.study.163.com/course/PKU-1000003006#/info</a>
-		</span>
-		<p>
-		<span style="color:red;background-color:yellow">大仕老师开设的慕课《C#程序设计（上）》于2014年12月1日开课。
-		<a href="http://mooc.study.163.com/course/PKU-1000003003#/info">http://mooc.study.163.com/course/PKU-1000003003#/info</a>
-		</span>
-		-->
-		<p>
-
-		<P>
-			<a href="#java1">《Java程序设计》</a><font color="red">（获第六届全国高校出版社优秀畅销书奖）</font> 唐大仕，北方交通大学大出版社，清华大学出版社，2003/2007修订/<FONT color="#ff00ff">2015第二版</FONT>
-			(北京大学信息技术系列教材)
-		<P>
-			<a href="#cs1">《C# 程序设计教程》</a>
-		唐大仕，北方交通大学出版社，清华大学出版社，2003 (高等学校信息技术系列教材)，<FONT color="#ff00ff">2018第二版</FONT>
-		<P>
-			<a href="#vb2">《Visual Basic程序设计》</a>
-		唐大仕，清华大学出版社，2003、<FONT color="#ff00ff">2015第二版</FONT> (普通高等学校文科专业计算机系列教材)
-		<P>
-			<a href="#vcp1">《Visual C++ .NET应用教程》</a>
-		唐大仕 刘光，北京交通大学大出版社，清华大学出版社，2006 (高等学校计算机语言应用教程)
-		<p>
-			<a href="#mb1">《用Java / C# 开发手机程序及移动应用》</a>
-		唐大仕，电子工业出版社，2004
-		<P>
-			<a href="#vb3">《Visual Basic程序设计题解与实验指导》</a>
-		唐大仕，清华大学出版社，2004 (高等学校文科计算机系列教材)
-		<P>
-			<a href="#vb1">《Visual Basic程序设计》</a>
-		唐大仕，北方交通大学出版社，清华大学出版社，2002 (北京大学信息技术系列教材)
-		<P>
-			<a href="#jsj1">《计算机基础教程》</a>
-		系列书（该系列书为与人合著）北京大学出版社，1998-2001(高等教育文科计算机教材)
-		<P>
-			<a href="#djks1">《计算机等级考试考前强化》</a>
-		唐大仕，中国人民大学出版社，1999
-		<P>
-		<P>
-		<p><a name="java1"></a></p>
-		<img src="images/java-1.jpg" height=200> <img src="images/java-1-2.jpg" height=200>
-		<img src="images/java-2.jpg" height=200>
-		<span class="bookname">《Java程序设计》</span>
-		<p><b>《Java程序设计》（北京大学信息技术系列教材）</b>
-			<br>
-			唐大仕编著
-			<br>
-			蔡翠平主编
-			<br>
-			北方交通大学大出版社，清华大学出版社，2003.4（347页）2007.5修订版、<FONT color="#ff00ff">2015第二版</FONT> <font color="red">（获第六届全国高校出版社优秀畅销书奖）</font>
-		<p><A href="java-1-pre.doc" target="_blank">前言</A>&nbsp;&nbsp;&nbsp; <A href="java-1-toc.doc" target="_blank">
-				详细目录</A> &nbsp;&nbsp;&nbsp; <a href="java-1-sample.zip" target="_blank">全书的例程源程序</a>(314K) 
-			&nbsp;&nbsp;&nbsp; <a href="java-1-err.doc" target="_blank">勘误表</a> &nbsp;&nbsp;&nbsp;<a target="bbs" href="bbs/bbslist.asp?forum_id=46">留言及BBS讨论区</a>
-			&nbsp;&nbsp;&nbsp;<a target="buy" href="buy.htm">购书信息</a>
-		</p>
-		<P>需要<U><FONT color="#ff00ff">电子教案(ppt)及习题答案</FONT></U>的读者请与作者<FONT color="#ff00ff">email</FONT>联系（
-			<A href="mailto:dstang2000@263.net">dstang2000@263.net</A> )&nbsp;</P>
-		<P>
-			<b>简介</b>
-			<br>
-		本书详细介绍了Java程序设计的基本环境、概念、方法。内容分为三个部分：第一部分介绍了Java语言基础：数据、控制结构、数组、类、包、对象、接口等；第二部分介绍了Java深入知识：传值调用、虚方法调用、异常处理、工具类与算法；第三部分是Java在应用：线程、流式文件、AWT及Swing图形用户界面、以及Java中在网络、多媒体、数据库等方面的应用。
-		<p>
-		本书内容详尽、循序渐进，在介绍编程技术的同时，还着重讲解了有关面向对象程序设计的基本概念和方法。书中提供了丰富的典型实例，具有可操作性，便于读者的学习与推广；各章附有大量的习题，便于读者的思考和复习。
-		<p>
-		本书内容和组织方式立足高校的教学教材，也可作为计算机技术的培训教材，还可作为Sun的认证考试（SCJP）的考试用书。
-		<P>&nbsp;<a href="#idx">回页首</a>
-		<P>		
-		
-		<p><a name="cs1"></a></p>
-		<img src="images/cs-1.jpg" height=200> <img src="images/cs-2.jpg" height=200>
-		<span class="bookname">《C#程序设计教程》</span>
-		<p><b>《C#程序设计教程》（高等学校计算机科学与技术系列教材）</b>
-			<br>
-			唐大仕编著
-			<br>
-		北方交通大学大出版社，清华大学出版社，2003.8 <FONT color="#ff00ff">2018第二版</FONT>
-		<p><A href="cs-1-pre.doc" target="_blank">前言</A>&nbsp;&nbsp;&nbsp; <A href="cs-1-toc.txt" target="_blank">
-				详细目录</A>&nbsp;&nbsp;&nbsp; <a href="cs-1-sample.zip" target="_blank">全书的例程源程序</a>(1.5M)
-			<a href="cs-1-software.htm">优秀的免费C#开发工具下载</a> &nbsp;&nbsp;&nbsp;<a target="bbs" href="bbs/bbslist.asp?forum_id=47">留言及BBS讨论区</a>
-			&nbsp;&nbsp;&nbsp;<a target="buy" href="buy.htm">购书信息</a>
-		</p>
-		<P>
-			<b>简介</b>
-			<br>
-		本书详细介绍了C#程序设计的基本环境、概念、方法和应用。内容分为四个部分：第一部分介绍了C#语言基础：数据、控制结构、数组、类、接口、结构等；第二部分介绍了C#深入知识：类型转换、参数传递、虚方法调用、异常处理、操作符重载；第三部分是C#的基本类及其在.NET应用：工具类、集合、常用算法、流式文件、文本应用、Windows窗体和控件、图形用户界面；第四部分是C#的高级应用：多线程、ASP.NET 
-		Web应用、ADO.NET数据库应用、XML Web Service、网络通讯编程以及C#与其他语言间的互操作等。
-		<p>
-		本书内容详尽、循序渐进，既介绍语法，又讲解语言机制，还注重C#在Windows及Web中的应用。本书提供了大量典型实例，配套光盘中附有源程序，并包括了能进行C#可视化开发的免费工具软件。
-		<p>
-		本书内容和组织方式立足高等学校的教学教材，也可作为计算机技术的培训教材，还可作为Microsoft的认证考试（MCAD/MCSD）的考试用书。
-		<P>&nbsp;<a href="#idx">回页首</a>
-		<P>
-	
-		
-		<p><a name="vb2"></a></p>
-		<img src="images/vb-2.jpg" height=200> <img src="images/vb-2-2.jpg" height=200>
-		<span class="bookname">《Visual 
-Basic程序设计》</span>
-		<p><b>《Visual Basic程序设计》（普通高等学校文科专业计算机系列教材）</b>
-			<br>
-			唐大仕编著
-			<br>
-			卢湘鸿主编
-			<br>
-		清华大学出版社，2003.8（359页） <FONT color="#ff00ff">2015.3 第二版</FONT>
-		<p><A href="vb-2-toc.doc" target="_blank">详细目录</A>&nbsp;&nbsp;&nbsp;<a href="vb-2-sample-index.doc" target="_blank">全书的例程索引</a>
-			&nbsp;&nbsp;&nbsp;<a target="bbs" href="bbs/bbslist.asp?forum_id=45">留言及BBS讨论区</a>
-			&nbsp;&nbsp;&nbsp;<a target="buy" href="buy.htm">购书信息</a>
-		</p>
-		<P>
-			<b>简介</b>
-			<br>
-		本书详细介绍了Visual Basic程序设计的基本环境、概念、方法。内容分为三个部分：第一部分简单介绍了Visual 
-		Basic的基本环境及设计程序的一般步骤；第二部分详细介绍了Visual 
-		Basic程序设计基础，包括：数据、控制结构、过程、数组、常用算法、界面设计、文件操作、程序调试及软件开发；第三部分介绍了Visual Basic在Win32 
-		API、多媒体、网络、数据库方面的应用以及Visual Basic与其他软件（如Word、VBScript）的编程方法。
-		<p>
-			本书内容详尽、循序渐进，在介绍编程技术的同时，还着重讲解了有关程序设计的基本概念和方法。书中提供了很多典型实例，这些实例具有可操作性，便于读者学习与应用；各章均附有大量的习题，便于读者思考和复习。
-			<br>
-		本书可作为高等学校的教材，也可作为计算机技术的培训教材或者作为全国计算机等级考试（Visual Basic）的考试用书。
-		<P>&nbsp;<a href="#idx">回页首</a>
-		<P>
-		<p><a name="vb3"></a></p>
-		<img src="images/vb-3.jpg">
-		<span class="bookname">《Visual 
-Basic程序设计题解与实验指导》</span>
-		<p><b>《Visual Basic程序设计题解与实验指导》（高等学校文科类专业大学计算机规划教材）</b>
-			<br>
-			唐大仕编著
-			<br>
-			卢湘鸿主编
-			<br>
-		清华大学出版社，2004.9 （289页）
-		<p><A href="vb-3-toc.doc" target="_blank">详细目录</A> &nbsp;&nbsp;&nbsp; <a href="vb-3-sample.zip" target="_blank">
-				示例程序、实验答案下载</a>(1.5M) &nbsp;&nbsp;&nbsp;<a href="library.zip" target="_blank"> 补：数据库示例（图书管理）<font color="red">new!</font></a>(306K) 
-			&nbsp;&nbsp;&nbsp; <a href='vb-remote-syllabus.doc' target="_blank">教学安排(校本部)</a>
-			&nbsp;&nbsp;&nbsp; <a href="vb-remote.ppt" target="_blank">远程课讲义</a>(900K，ppt) 
-			&nbsp;&nbsp;&nbsp; <a href="vb-3-lab.pdf" target="_blank">课上示例及实验安排</a>(38页，pdf文档) 
-			&nbsp;&nbsp;&nbsp;<a href="vb-remote-review.doc" target="_blank">远程VB复习</a> &nbsp;&nbsp;&nbsp;
-			<a href="vb-net-resource.doc" target="_blank">网络上的VB资源</a> &nbsp;&nbsp;&nbsp;<a target="bbs" href="bbs/bbslist.asp?forum_id=45">留言及BBS讨论区</a>
-			&nbsp;&nbsp;&nbsp;<a target="buy" href="buy.htm">购书信息</a>
-		</p>
-		<P>
-		
-		<p><a name="vcp1"></a></p>
-		<img src="images/vcp-1.jpg" width="144" height="208">
-		<span class="bookname">《Visual C++ .NET应用教程》</span>
-		<p><b>《Visual C++ .NET应用教程》</b>
-			<br>
-			唐大仕 刘光 编著
-			<br>
-		北京交通大学大出版社，清华大学出版社，2006.5 (高等学校计算机语言应用教程)（355页）（含光盘）
-		<p><A href="vcp-1-pre.doc" target="_blank">前言</A>&nbsp;&nbsp;&nbsp; <A href="vcp-1-toc.doc" target="_blank">
-				详细目录</A>&nbsp;&nbsp;&nbsp;<a href="http://press.bjtu.edu.cn/bookdetail.asp?id=785" target="_blank">购书信息</a>
-		</p>
-		<P>
-			<b>简介</b><br>
-			C++语言是一门面向对象的程序设计语言，是高校广泛使用的程序设计教学语言之一，而Visual 
-			C++.NET则是C++语言中最新且最为流行的编程环境。本书对C++语言（特别是托管的C++语言）及Visual 
-			C++.NET应用编程进行了较为全面的阐述。内容分为四个部分：第一部分介绍了C++语言基础：数据类型、表达式、语句、数组、指针、函数；第二部分介绍了C++面向对象特点：类、对象、继承、多态性、异常处理；第三部分是Visual 
-			C++.NET的基本应用：Windows窗体、控件、图形图像处理、流与文件；第四部分是C#的高级应用：ADO.NET数据库应用、多线程、网络通讯、远程调用、XML 
-			Web Service以及与非托管代码的互操作等。</P>
-		<P>本书内容详尽、循序渐进，既介绍语法，又讲解语言机制，还注重C#在Windows及Web中的应用。本书提供了大量典型实例，配套光盘中附有全部源程序。本书内容和组织方式立足高等学校的教学教材，也可作为计算机技术的培训教材，还可作为Visual 
-			C++.NET的自学用书。
-		</P>
-		<P>&nbsp;<a href="#idx">回页首</a>
-		<P>
-		<p><a name="mb1"></a></p>
-		<img src="images/mb-1.jpg">
-		<span class="bookname">《用Java/C#开发手机程序及移动应用》</span>
-		<p><b>《用Java/C#开发手机程序及移动应用》</b>
-			<br>
-			唐大仕编著
-			<br>
-		电子工业出版社，2004.4（435页）（含光盘）
-		<p><A href="mb-1-pre.htm" target="_blank">前言</A>&nbsp;&nbsp;&nbsp; <A href="mb-1-toc.txt" target="_blank">
-				详细目录</A>&nbsp;&nbsp;&nbsp; <a href="mb-1-app-a.htm" target="_blank">附录A：常见问题解答</a>&nbsp;&nbsp;&nbsp;
-			<a href="mb-1-app-b.htm">书中所用到的工具软件和支持类库</a> &nbsp;&nbsp;&nbsp;<a target="bbs" href="bbs/bbslist.asp?forum_id=48">留言及BBS讨论区</a>
-			&nbsp;&nbsp;&nbsp;<a target="buy" href="buy.htm">购书信息</a>
-		</p>
-		<P>
-			<b>简介</b><br>
-		本书全面、深入地介绍手机程序及移动应用的开发。全书的内容分为三个部分。第一篇介绍手机MIDP程序的基础，包括了J2ME核心类、用户界面、事件处理；第二篇是MIDP高级编程，包括多线程、IO及网络编程、数据库、多媒体及GAME 
-		API编程等；第三篇是移动应用的深入话题，包括扩展类库、与服务端联合搭建移动应用、XML及Web 
-		Service、短信编程等，并介绍了各种移动平台下的开发方式。
-		<p>
-		全书内容详尽、系统，在讲解基本原理和方法的同时，还列举了大量的实例程序，并特别介绍了一些关键性技术问题（如浮点编程、加密、代码签名、代码优化等）。配套光盘上附有全书的源程序。本书可作为专业开发人员的技术指导用书，可也作为编程爱好者的参考读物。
-		<P>&nbsp;<a href="#idx">回页首</a>
-		<P>
+})();
 
 
-			<b>简介</b>
-			<br>
-		本书是配合《Visual Basic程序设计》一书编写的参考书，由三部分组成：第一部分是《Visual 
-		Basic程序设计》习题和参考解答，包括了清华大学出版社的《Visual 
-		Basic程序设计》(唐大仕编著)一书各章的全部习题，对每个选择题、填空题、编程题都给出了参考解答。 第二部分是上机实验指导，介绍了Visual 
-		Basic的安装、程序调试、帮助的使用等。 
-		第三部分是上机实验安排，结合教材内容提供了15个实验，每个实验都给出了实验目的、要求和实验步骤。在附录中还附有Visual 
-		Basic上机时常用的一些参考信息，如常用内部函数、常用错误信息、常用属性、事件等。
-		<p>
-		本书内容丰富，实用性强，是学习Visual Basic程序设十分有用的参考书。适合高等学校师生或计算机培训班使用，也可供参加全国计算机等级考试Visual 
-		Basic的读者参考。
-		<P>&nbsp;<a href="#idx">回页首</a>
-		<P>
-		<p><a name="vb1"></a></p>
-		<img src="images/vb-1.jpg">
-		<span class="bookname">《Visual 
-Basic程序设计》</span>
-		<p><b>《Visual Basic程序设计》（北京大学信息技术系列教材）</b>
-			<br>
-			唐大仕编著
-			<br>
-			蔡翠平主编
-			<br>
-		北方交通大学出版社，清华大学出版社，2002.1（319页）
-		<p><A href="vb-1-toc.doc" target="_blank">详细目录</A>&nbsp;&nbsp;&nbsp;<a href="vb-1-sample.zip" target="_blank">书中例程序下载</a>(117K) 
-			&nbsp;&nbsp;&nbsp;<a target="bbs" href="bbs/bbslist.asp?forum_id=45">留言及BBS讨论区</a>
-			&nbsp;&nbsp;&nbsp;<a target="buy" href="buy.htm">购书信息</a>
-		</p>
-		<P>
-			<b>简介</b>
-			<br>
-		本书详细介绍了Visual Basic程序设计的基本环境、概念、方法。内容分为三个部分：第一部分简单介绍了Visual 
-		Basic的基本环境及设计程序的一般步骤；第二部分详细介绍了Visual 
-		Basic程序设计基础，包括：数据、控制结构、过程、遍试、迭代、递归、界面设计、文件操作、程序调试及软件开发；第三部分是Visual Basic在Win32 
-		API、多媒体、网络、数据库方面的应用以及VB与其他软件（如Word、VBScript）的编程。
-		<p>
-		本书内容详尽、循序渐进，在介绍编程技术的同时，还着重讲解了有关程序设计的基本概念和方法，并扩展到软件工程等相关方面，使读者了解软件开发的全过程。书中提供了的典型实例，具有可操作性，便于读者的学习与推广。
-		<p>
-			本书内容和组织方式立足高校的教学教材，也可作为计算机技术的培训教材，还可供从事程序设计开发的相关人员学习、自学使用。</p>
-		<P>&nbsp;<a href="#idx">回页首</a>
-		<P>
-		<p><a name="jsj1"></a></p>
-		<span class="bookname">《计算机基础教程》系列书</span>
-		<p><b>《计算机基础教程（上/下册）》（高等教育文科计算机教材）</b>
-			<br>
-			北京大学出版社，2000.8（上册，197页），2001.4（下册，221页）
-			<br>
-			裘宗燕主编
-			<br>
-		撰稿人（按章节顺序排序）：裘宗燕、缪蓉、张化瑞、吴筱萌、邓习峰、唐大仕
-		<p><A href="jsj-toc.doc" target="_blank">详细目录</A> &nbsp;&nbsp;&nbsp;<a target="bbs" href="bbs/bbslist.asp?forum_id=42">留言及BBS讨论区</a>
-		</p>
-		<b>简介</b>
-		<br>
-		本套教材为北京大学主干基础课教材，由北京大学文科计算机教研室课程主讲教师编写。教材在介绍计算机领域迅速发展的新技术新软件的同时，还着重讲解了有关计算机技术更具根本性的概念和方法。
-		<p>
-		根据教学大纲要求，本套教材分上下两册，上册1-6章，下册7-11章。
-		<p>
-		上册包括：第1章为计算机的历史和发展；第2章为计算机入门；第3章为计算机系统的基本组成和基本工作原理；第4章为操作系统与Windows 
-		98；第5章为文字处理软件Word、第6章为演示文稿软件PowerPoint。
-		<p>
-			下册包括：第7章为计算机网络; 第8章为多媒体的概念和应用；第9章为电子表格软件Excel；第10章为数据库；第11章为计算机与信息社会。
-			<br>
-		本教材的内容和组织方式也适合任何初学计算机的人学习，也可以作为计算机技术的实践性入门读物，或者普及计算机技术的培训教材。
-		<p>
-		<p><b>《微机应用基础教程(DOS篇/Windows篇)》（高等教育文科计算机教材）</b>
-			<br>
-			北京大学出版社，1998.6（Dos篇,236页），1998.8（Windows篇，240页）
-			<br>
-			（DOS篇）董引吾、邓习峰、张化瑞、唐大仕编著，许卓群主审；
-			<br>
-		（Windows篇）吴筱萌、唐大仕、蔡翠平编著；许卓群主审
-		<P>
-			<b>简介</b>
-			<br>
-		本套教材分上下两册，分别是《微机应用基础教程--DOS篇》和《微机应用基础教程--Windows篇》》，由北京大学文科计算机教研室课程主讲教师编写。这套教材既体现了教学大纲的要求，又考虑到计算机的发展；既注重学生掌握计算机的基础知识，又让学生了解当今的最新技术。
-		<p>
-		上册内容包括：计算机基础知识和DOS操作系统，中文平台，汉字输入方法和字表处理软件的使用，数据库基础和管理系统，FoxBASE命令的使用和程序设计等。
-		<p>
-		下册内容包括：Windows基础知识及应用软件Word, Excel, Visual FoxPro等，计算机网络知识及Internet的应用等。
-		<p>
-			本套教材可作为高等院校文科各专业计算机基础课程教材，也可作为高等理科非计算机专业和成人教育文科各专业的计算机教材，还可作为各行业计算机培训教材。</p>
-		<P>&nbsp;<a href="#idx">回页首</a>
-		<P>
-		<p><a name="djks1"></a></p>
-		<span class="bookname">《全国计算机等级考试考前强化》</span>
-		<p>
-			<b>《全国计算机等级考试二级FoxBASE考前强化》</b>
-			<br>
-			唐大仕编著，董引吾主审
-			<br>
-		中国人民大学出版社，1999.9（176页）
-		<p>
-			<b>简介</b>
-			<br>
-		本书是针对全国计算机等级考试（二级FoxBASE）的考前强化用书。本书不同于教材（内容过多过细），也不同于试题集（漫无目标），而是以"考试热点"为主线，每章内容包括：考试大纲要求、考试热点、典型例题、一般例题、重点难点讲解、模拟试题。目的是通过这些强化，使考生在较短时间内掌握考试的主要内容，从而顺利通过考试。
-		<P>&nbsp;<a href="#idx">回页首</a>
-		<P></P>
+</script>
 
-	  <div style="width:600px;margin:0 auto; padding:20px 0;">
-		Copyright &copy; All Rights Reserved <a href="http://www.miibeian.gov.cn">
-			京ICP备16064588号</a>
-		 		<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802023082" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="http://www.beian.gov.cn/img/ghs.png" style="float:left;"/><p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">京公网安备 11010802023082号</p></a>
-		 	</div>
-	</BODY>
 </html>

@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.28307.705
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsSimpleCrawler_1", "WindowsSimpleCrawler_1\WindowsSimpleCrawler_1.csproj", "{00DFB9EB-6AA0-4748-B0CB-04FDC38E9F62}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleCrawler2", "..\SimpleCrawler2\SimpleCrawler2\SimpleCrawler2.csproj", "{9978A19F-B643-4F7D-BD2A-090F25832734}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleCrawler2", "SimpleCrawler2\SimpleCrawler2.csproj", "{9978A19F-B643-4F7D-BD2A-090F25832734}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

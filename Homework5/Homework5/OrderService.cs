@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace Homework5
 {
@@ -111,6 +113,31 @@ namespace Homework5
                 Orderstr += ord + "\n";
             }
             return Orderstr;
+        }
+
+        public String Export(String fileName) //fileName传递文件名
+        {
+            //将所有订单序列化为XML文件
+            XmlSerializer xmlserializer = new XmlSerializer(typeof(Order[]));
+            using (FileStream fs = new FileStream(fileName, FileMode.Create))
+            {
+                xmlserializer.Serialize(fs, orderList.ToArray());
+            }
+            return File.ReadAllText(fileName);
+        }
+        public List<Order> Import(String fileName)
+        {
+            XmlSerializer xmlserializer = new XmlSerializer(typeof(Order[]));
+            //从XML文件中载入订单 
+            using (FileStream fs = new FileStream(fileName, FileMode.Open))
+            {
+                Order[] orderlist2 = (Order[])xmlserializer.Deserialize(fs);
+                foreach (Order o in orderlist2) //导入订单
+                {
+                    this.AddOrder(o);
+                }
+                return orderlist2.ToList();
+            }
         }
 
     }

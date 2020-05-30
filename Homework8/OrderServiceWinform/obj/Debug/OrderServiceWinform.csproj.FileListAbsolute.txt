@@ -13,3 +13,11 @@ G:\VS\repos\OrderServiceWinform\OrderServiceWinform\bin\Debug\Homework5.pdb
 G:\VS\repos\OrderServiceWinform\OrderServiceWinform\bin\Debug\Homework5.exe.config
 G:\VS\repos\OrderServiceWinform\OrderServiceWinform\obj\Debug\OrderServiceWinform.csproj.CopyComplete
 G:\VS\repos\OrderServiceWinform\OrderServiceWinform\obj\Debug\OrderServiceWinform.csprojAssemblyReference.cache
+G:\VS\repos\OrderServiceWinform\CSharpHomeWork_\Homework8\OrderServiceWinform\obj\Debug\OrderServiceWinform.csprojAssemblyReference.cache
+G:\VS\repos\OrderServiceWinform\CSharpHomeWork_\Homework8\OrderServiceWinform\obj\Debug\OrderServiceWinform.Form1.resources
+G:\VS\repos\OrderServiceWinform\CSharpHomeWork_\Homework8\OrderServiceWinform\obj\Debug\OrderServiceWinform.Form2.resources
+G:\VS\repos\OrderServiceWinform\CSharpHomeWork_\Homework8\OrderServiceWinform\obj\Debug\OrderServiceWinform.Properties.Resources.resources
+G:\VS\repos\OrderServiceWinform\CSharpHomeWork_\Homework8\OrderServiceWinform\obj\Debug\OrderServiceWinform.csproj.GenerateResource.cache
+G:\VS\repos\OrderServiceWinform\CSharpHomeWork_\Homework8\OrderServiceWinform\obj\Debug\OrderServiceWinform.csproj.CoreCompileInputs.cache
+G:\VS\repos\OrderServiceWinform\CSharpHomeWork_\Homework8\OrderServiceWinform\obj\Debug\OrderServiceWinform.exe
+G:\VS\repos\OrderServiceWinform\CSharpHomeWork_\Homework8\OrderServiceWinform\obj\Debug\OrderServiceWinform.pdb

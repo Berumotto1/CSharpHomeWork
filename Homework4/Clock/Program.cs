@@ -34,8 +34,9 @@ namespace work2
                 Aclock.clock.TimeOut(h1, m1, s1);
                 System.Threading.Thread.Sleep(1000);
             }
- 
+
         }
+        
 
     }
 }

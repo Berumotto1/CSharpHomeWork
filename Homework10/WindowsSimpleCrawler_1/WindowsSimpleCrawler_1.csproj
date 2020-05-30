@@ -81,7 +81,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\SimpleCrawler2\SimpleCrawler2\SimpleCrawler2.csproj">
+    <ProjectReference Include="..\SimpleCrawler2\SimpleCrawler2.csproj">
       <Project>{9978a19f-b643-4f7d-bd2a-090f25832734}</Project>
       <Name>SimpleCrawler2</Name>
     </ProjectReference>

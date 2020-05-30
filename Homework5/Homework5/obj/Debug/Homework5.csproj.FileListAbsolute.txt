@@ -5,3 +5,10 @@ G:\VS\repos\Homework5\Homework5\bin\Debug\Homework5.exe
 G:\VS\repos\Homework5\Homework5\bin\Debug\Homework5.pdb
 G:\VS\repos\Homework5\Homework5\obj\Debug\Homework5.exe
 G:\VS\repos\Homework5\Homework5\obj\Debug\Homework5.pdb
+G:\VS\repos\OrderServiceWinform\CSharpHomeWork_\Homework5\Homework5\bin\Debug\Homework5.exe.config
+G:\VS\repos\OrderServiceWinform\CSharpHomeWork_\Homework5\Homework5\bin\Debug\Homework5.exe
+G:\VS\repos\OrderServiceWinform\CSharpHomeWork_\Homework5\Homework5\bin\Debug\Homework5.pdb
+G:\VS\repos\OrderServiceWinform\CSharpHomeWork_\Homework5\Homework5\obj\Debug\Homework5.csprojAssemblyReference.cache
+G:\VS\repos\OrderServiceWinform\CSharpHomeWork_\Homework5\Homework5\obj\Debug\Homework5.csproj.CoreCompileInputs.cache
+G:\VS\repos\OrderServiceWinform\CSharpHomeWork_\Homework5\Homework5\obj\Debug\Homework5.exe
+G:\VS\repos\OrderServiceWinform\CSharpHomeWork_\Homework5\Homework5\obj\Debug\Homework5.pdb

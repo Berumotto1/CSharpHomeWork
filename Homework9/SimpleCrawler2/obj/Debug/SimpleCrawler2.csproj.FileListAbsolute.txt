@@ -5,3 +5,10 @@ G:\VS\repos\SimpleCrawler2\SimpleCrawler2\obj\Debug\SimpleCrawler2.csproj.CoreCo
 G:\VS\repos\SimpleCrawler2\SimpleCrawler2\obj\Debug\SimpleCrawler2.exe
 G:\VS\repos\SimpleCrawler2\SimpleCrawler2\obj\Debug\SimpleCrawler2.pdb
 G:\VS\repos\SimpleCrawler2\SimpleCrawler2\obj\Debug\SimpleCrawler2.csprojAssemblyReference.cache
+G:\VS\repos\OrderServiceWinform\CSharpHomeWork_\Homework9\SimpleCrawler2\bin\Debug\SimpleCrawler2.exe.config
+G:\VS\repos\OrderServiceWinform\CSharpHomeWork_\Homework9\SimpleCrawler2\bin\Debug\SimpleCrawler2.exe
+G:\VS\repos\OrderServiceWinform\CSharpHomeWork_\Homework9\SimpleCrawler2\bin\Debug\SimpleCrawler2.pdb
+G:\VS\repos\OrderServiceWinform\CSharpHomeWork_\Homework9\SimpleCrawler2\obj\Debug\SimpleCrawler2.csprojAssemblyReference.cache
+G:\VS\repos\OrderServiceWinform\CSharpHomeWork_\Homework9\SimpleCrawler2\obj\Debug\SimpleCrawler2.csproj.CoreCompileInputs.cache
+G:\VS\repos\OrderServiceWinform\CSharpHomeWork_\Homework9\SimpleCrawler2\obj\Debug\SimpleCrawler2.exe
+G:\VS\repos\OrderServiceWinform\CSharpHomeWork_\Homework9\SimpleCrawler2\obj\Debug\SimpleCrawler2.pdb

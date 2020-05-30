@@ -5,3 +5,10 @@ G:\VS\repos\Homework4\work2\obj\Debug\work2.csprojAssemblyReference.cache
 G:\VS\repos\Homework4\work2\obj\Debug\work2.csproj.CoreCompileInputs.cache
 G:\VS\repos\Homework4\work2\obj\Debug\work2.exe
 G:\VS\repos\Homework4\work2\obj\Debug\work2.pdb
+G:\VS\repos\OrderServiceWinform\CSharpHomeWork_\Homework4\Clock\obj\Debug\work2.csprojAssemblyReference.cache
+G:\VS\repos\OrderServiceWinform\CSharpHomeWork_\Homework4\Clock\obj\Debug\work2.csproj.CoreCompileInputs.cache
+G:\VS\repos\OrderServiceWinform\CSharpHomeWork_\Homework4\Clock\obj\Debug\work2.exe
+G:\VS\repos\OrderServiceWinform\CSharpHomeWork_\Homework4\Clock\obj\Debug\work2.pdb
+G:\VS\repos\OrderServiceWinform\CSharpHomeWork_\Homework4\Clock\bin\Debug\work2.exe.config
+G:\VS\repos\OrderServiceWinform\CSharpHomeWork_\Homework4\Clock\bin\Debug\work2.exe
+G:\VS\repos\OrderServiceWinform\CSharpHomeWork_\Homework4\Clock\bin\Debug\work2.pdb

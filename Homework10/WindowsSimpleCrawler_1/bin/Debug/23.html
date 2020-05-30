@@ -1,0 +1,72 @@
+﻿<!doctype html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit" />
+    <meta name="force-rendering" content="webkit" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <base href="/">
+    <title>博客后台 - 博客园</title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-48445196-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-48445196-1');
+    </script>
+
+    <link rel="icon"
+          type="image/x-icon"
+          href="/favicon.ico">
+    <style>
+        .IE {
+            display: none;
+            padding: 2em;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: #ffffffed;
+        }
+
+        .IE p {
+            font-size: 16px;
+            text-align: right;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+
+        function ready(fn) {
+            if (document.readyState != 'loading') {
+                fn();
+            } else {
+                document.addEventListener('DOMContentLoaded', fn);
+            }
+        }
+
+        ready(function () {
+            var ua = window.navigator.userAgent;
+            var msie = ua.indexOf('MSIE ');
+            var ieMsg = document.querySelector('.IE');
+
+            if (msie > 0) {
+                ieMsg.style.display = 'block';
+                ieMsg.querySelector('p').addEventListener('click', function () {
+                    ieMsg.remove();
+                })
+            }
+        });
+    </script>
+<link rel="stylesheet" href="styles.144b73a65051bb0cdd3b.css"></head>
+
+<body>
+    <cnb-root></cnb-root>
+    <div class="IE">
+        <h1>请更换浏览器或切换浏览器内核模式，在更换或切换浏览器内核前，你可能无法正常访问此网站。</h1>
+        <p>点击此处可以关闭提示</p>
+    </div>
+<script src="runtime-es2015.7c9af47288d0dcafbdf9.js" type="module"></script><script src="runtime-es5.7c9af47288d0dcafbdf9.js" nomodule defer></script><script src="polyfills-es5.21bdb3fba66ce36207f4.js" nomodule defer></script><script src="polyfills-es2015.ab0035b94afa047486cd.js" type="module"></script><script src="main-es2015.c80b0004489df84bb090.js" type="module"></script><script src="main-es5.c80b0004489df84bb090.js" nomodule defer></script></body>
+
+</html>

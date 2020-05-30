@@ -141,3 +141,5 @@ G:\VS\repos\OrderServiceWinform\OrderServiceWinform\bin\Debug\MySqlConnector.xml
 G:\VS\repos\OrderServiceWinform\OrderServiceWinform\bin\Debug\System.Threading.Tasks.Extensions.xml
 G:\VS\repos\OrderServiceWinform\OrderServiceWinform\obj\Debug\OrderServiceWinform.ItemEdit.resources
 G:\VS\repos\OrderServiceWinform\OrderServiceWinform\obj\Debug\OrderServiceWinform.csprojAssemblyReference.cache
+G:\VS\repos\OrderServiceWinform\CSharpHomeWork_\Homework11\OrderServiceWinform\obj\Debug\OrderServiceWinform.exe
+G:\VS\repos\OrderServiceWinform\CSharpHomeWork_\Homework11\OrderServiceWinform\obj\Debug\OrderServiceWinform.pdb

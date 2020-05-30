@@ -50,7 +50,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Homework3\Shape.csproj">
+    <ProjectReference Include="..\Shape\Shape.csproj">
       <Project>{c1ad5b63-6ee2-4f0e-9fde-3e1441908034}</Project>
       <Name>Shape</Name>
     </ProjectReference>

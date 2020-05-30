@@ -43,7 +43,7 @@ namespace Homework4
             Console.WriteLine("Max:" + max);
             Console.WriteLine("Min:" + min);
             Console.WriteLine("Sum:" + sum);
-
+            Console.Read();
         }
     }
 }

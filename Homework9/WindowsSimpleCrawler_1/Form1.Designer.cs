@@ -32,6 +32,7 @@
             this.URLBox1 = new System.Windows.Forms.ComboBox();
             this.URLBox2 = new System.Windows.Forms.ComboBox();
             this.URLlistBox1 = new System.Windows.Forms.ListBox();
+            this.lblInfo = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Crawler_button
@@ -64,7 +65,7 @@
             this.URLBox2.Location = new System.Drawing.Point(219, 54);
             this.URLBox2.Name = "URLBox2";
             this.URLBox2.Size = new System.Drawing.Size(281, 23);
-            this.URLBox2.TabIndex = 2;
+            this.URLBox2.TabIndex = 1;
             // 
             // URLlistBox1
             // 
@@ -75,11 +76,20 @@
             this.URLlistBox1.Size = new System.Drawing.Size(583, 259);
             this.URLlistBox1.TabIndex = 3;
             // 
+            // lblInfo
+            // 
+            this.lblInfo.AutoSize = true;
+            this.lblInfo.Location = new System.Drawing.Point(103, 98);
+            this.lblInfo.Name = "lblInfo";
+            this.lblInfo.Size = new System.Drawing.Size(0, 15);
+            this.lblInfo.TabIndex = 4;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblInfo);
             this.Controls.Add(this.URLlistBox1);
             this.Controls.Add(this.URLBox2);
             this.Controls.Add(this.URLBox1);
@@ -87,6 +97,7 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -96,6 +107,7 @@
         private System.Windows.Forms.ComboBox URLBox1;
         private System.Windows.Forms.ComboBox URLBox2;
         private System.Windows.Forms.ListBox URLlistBox1;
+        private System.Windows.Forms.Label lblInfo;
     }
 }
 

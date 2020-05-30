@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.705
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "work1", "Homework4\work1.csproj", "{3CCB192D-9CFC-4B34-AE54-3F48CF25550C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "work1", "ForEach\work1.csproj", "{3CCB192D-9CFC-4B34-AE54-3F48CF25550C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "work2", "work2\work2.csproj", "{A2C8AACF-13C4-4FD1-89C7-BE0B6DC04C3F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "work2", "Clock\work2.csproj", "{A2C8AACF-13C4-4FD1-89C7-BE0B6DC04C3F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

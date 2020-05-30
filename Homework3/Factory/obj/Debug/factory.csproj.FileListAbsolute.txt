@@ -9,3 +9,14 @@ G:\VS\repos\Homework3\work2\obj\Debug\factory.csproj.CoreCompileInputs.cache
 G:\VS\repos\Homework3\work2\obj\Debug\factory.csproj.CopyComplete
 G:\VS\repos\Homework3\work2\obj\Debug\work2.exe
 G:\VS\repos\Homework3\work2\obj\Debug\work2.pdb
+G:\VS\repos\OrderServiceWinform\CSharpHomeWork_\Homework3\Factory\bin\Debug\work2.exe.config
+G:\VS\repos\OrderServiceWinform\CSharpHomeWork_\Homework3\Factory\bin\Debug\work2.exe
+G:\VS\repos\OrderServiceWinform\CSharpHomeWork_\Homework3\Factory\bin\Debug\work2.pdb
+G:\VS\repos\OrderServiceWinform\CSharpHomeWork_\Homework3\Factory\bin\Debug\Homework3.exe
+G:\VS\repos\OrderServiceWinform\CSharpHomeWork_\Homework3\Factory\bin\Debug\Homework3.pdb
+G:\VS\repos\OrderServiceWinform\CSharpHomeWork_\Homework3\Factory\bin\Debug\Homework3.exe.config
+G:\VS\repos\OrderServiceWinform\CSharpHomeWork_\Homework3\Factory\obj\Debug\Factory.csprojAssemblyReference.cache
+G:\VS\repos\OrderServiceWinform\CSharpHomeWork_\Homework3\Factory\obj\Debug\Factory.csproj.CoreCompileInputs.cache
+G:\VS\repos\OrderServiceWinform\CSharpHomeWork_\Homework3\Factory\obj\Debug\Factory.csproj.CopyComplete
+G:\VS\repos\OrderServiceWinform\CSharpHomeWork_\Homework3\Factory\obj\Debug\work2.exe
+G:\VS\repos\OrderServiceWinform\CSharpHomeWork_\Homework3\Factory\obj\Debug\work2.pdb

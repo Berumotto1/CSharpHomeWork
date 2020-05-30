@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.705
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shape", "Homework3\Shape.csproj", "{C1AD5B63-6EE2-4F0E-9FDE-3E1441908034}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shape", "Shape\Shape.csproj", "{C1AD5B63-6EE2-4F0E-9FDE-3E1441908034}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Factory", "work2\Factory.csproj", "{B2FE5B4C-31AB-4B19-9FE2-199B19128D56}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Factory", "Factory\Factory.csproj", "{B2FE5B4C-31AB-4B19-9FE2-199B19128D56}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

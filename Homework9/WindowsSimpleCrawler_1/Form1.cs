@@ -15,25 +15,44 @@ namespace WindowsSimpleCrawler_1
     public partial class Form1 : Form
     {
         SimpleCrawler sc = new SimpleCrawler();
-
+        BindingSource resultBindingSource = new BindingSource();
+        Thread thread = null;
         public Form1()
         {
-            string result = sc.crawlerResult;
+            
             InitializeComponent();
-            sc.PageDownload += Crawler_PageDownloaded;     
+            URLlistBox1.DataSource = resultBindingSource;
+            sc.PageDownload += Crawler_PageDownloaded;
+            sc.CrawlerStopped += Crawler_CrawlerStopped;
         }
 
-
-        private void Crawler_PageDownloaded(string obj)
+        private void Crawler_CrawlerStopped(SimpleCrawler obj)
         {
-            if (this.URLlistBox1.InvokeRequired)
+            Action action = () => lblInfo.Text = "爬虫已停止";
+            if (this.InvokeRequired)
             {
-                Action<String> action = this.AddUrl;
-                this.Invoke(action, new object[] { obj });
+                this.Invoke(action);
             }
             else
             {
-                URLlistBox1.Items.Add(obj);
+                action();
+            }
+        }
+
+        private void Crawler_PageDownloaded(SimpleCrawler crwaler,int index,string obj,string info)
+        {
+            var pageInfo = new { Index = index, URL = obj, Status = info };
+            Action action = () => { resultBindingSource.Add(pageInfo); };
+            if (this.URLlistBox1.InvokeRequired)
+            {
+                this.Invoke(action);
+                /*Action<String> action = this.AddUrl;
+                this.Invoke(action, new object[] { obj });*/
+            }
+            else
+            {
+                action();
+                //URLlistBox1.Items.Add(obj);
             }
         }
 
@@ -45,13 +64,14 @@ namespace WindowsSimpleCrawler_1
         
         private void Crawler_button_Click(object sender, EventArgs e)
         {
+            resultBindingSource.Clear();
             
             string startURL = URLBox1.Text + URLBox2.Text;
-            URLlistBox1.Items.Clear(); //清空内容
-            //new Thread(() => sc.init(startURL)).Start();
-            sc.init(startURL);
-            
-            
+            //URLlistBox1.Items.Clear(); //清空内容
+            new Thread(() => sc.init(startURL,1)).Start();
+            //sc.init(startURL);
+            lblInfo.Text = "爬虫已启动....";
+
 
         }
     }
